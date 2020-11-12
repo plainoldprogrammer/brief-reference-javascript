@@ -7,3 +7,8 @@ Brief reference of the JavaScript programming language.
 ```
 console.log("This is a log message");
 ```
+
+#### Get an Element by the Id
+```
+  var el = document.getElementById("the-element-id");
+```
