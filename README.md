@@ -8,7 +8,17 @@ Brief reference of the JavaScript programming language.
 console.log("This is a log message");
 ```
 
-#### Get an Element by the Id
+#### Get an element by their id
 ```
-  var el = document.getElementById("the-element-id");
+var el = document.getElementById("the-element-id");
+```
+
+#### Add an event listener to an element
+```
+var p = document.getElementById("element-id");
+
+p.addEventListener("click", function(event)
+{
+  p.innerHTML = "You clicked it";
+});
 ```
