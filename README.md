@@ -22,3 +22,8 @@ p.addEventListener("click", function(event)
   p.innerHTML = "You clicked it";
 });
 ```
+
+#### Set an attribute
+```
+ul.setAttribute("class", "notes");
+```
