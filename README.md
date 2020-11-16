@@ -27,3 +27,10 @@ p.addEventListener("click", function(event)
 ```
 ul.setAttribute("class", "notes");
 ```
+
+#### Get elements by tag name
+```
+list = document.getElementsByTagName("ul")[0];
+
+NOTE:	Retrieve the first list in the DOM.
+```
