@@ -34,3 +34,14 @@ list = document.getElementsByTagName("ul")[0];
 
 NOTE:	Retrieve the first list in the DOM.
 ```
+
+#### Create a new li element and add some text content to it
+```
+list = document.getElementsByTagName("ul")[0];
+newElement = document.createElement("li");
+newElement.textContent = "Page manimulation from JS is easy";
+
+list.appendChild(newElement);
+
+NOTE:	The element is appended too the first list in the DOM.
+```
