@@ -45,3 +45,8 @@ list.appendChild(newElement);
 
 NOTE:	The element is appended too the first list in the DOM.
 ```
+
+#### Define a constant
+```
+const PI = 3.141593;
+```
