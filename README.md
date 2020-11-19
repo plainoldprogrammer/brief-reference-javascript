@@ -50,3 +50,8 @@ NOTE:	The element is appended too the first list in the DOM.
 ```
 const PI = 3.141593;
 ```
+
+#### Get the length of an array
+```
+const elements = [1, -1, -3].length
+```
