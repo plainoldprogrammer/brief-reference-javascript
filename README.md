@@ -55,3 +55,18 @@ const PI = 3.141593;
 ```
 const elements = [1, -1, -3].length
 ```
+
+#### Loop an array
+```
+const places = ["Italy", "France", "Portugal"]
+
+console.log("\nUsing an array function: ")
+places.forEach(place => {
+	console.log(place)
+})
+
+console.log("\nUsing a function: ")
+places.forEach(function (place) {
+	console.log(place)
+})
+```
