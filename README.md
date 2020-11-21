@@ -62,11 +62,18 @@ const places = ["Italy", "France", "Portugal"]
 
 console.log("\nUsing an array function: ")
 places.forEach(place => {
-	console.log(place)
+  console.log(place)
 })
 
 console.log("\nUsing a function: ")
 places.forEach(function (place) {
-	console.log(place)
+  console.log(place)
 })
+```
+
+#### Basic arrow function
+```
+value => {
+  console.log(value)
+}
 ```
