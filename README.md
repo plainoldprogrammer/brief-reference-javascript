@@ -77,3 +77,8 @@ value => {
   console.log(value)
 }
 ```
+
+#### Define a constant array
+```
+const t = [1, -1, 3];
+```
