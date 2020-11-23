@@ -82,3 +82,9 @@ value => {
 ```
 const t = [1, -1, 3];
 ```
+
+#### Use the map method
+```
+const t = [1, 2, 3]
+const m1 = t.map(value => value *2)
+```
