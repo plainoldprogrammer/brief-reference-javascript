@@ -88,3 +88,9 @@ const t = [1, -1, 3];
 const t = [1, 2, 3]
 const m1 = t.map(value => value *2)
 ```
+
+#### Transform an array of integers to an array of html li
+```
+const t = [1, 2, 3]
+const m2 = t.map(value => "<li>" + value + </li>)
+```
