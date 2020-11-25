@@ -94,3 +94,9 @@ const m1 = t.map(value => value *2)
 const t = [1, 2, 3]
 const m2 = t.map(value => "<li>" + value + </li>)
 ```
+
+#### Assign individual items of an array to a variable
+```
+const t = [1, 2, 3, 4, 5]
+const [first, second, ...rest] = t
+```
