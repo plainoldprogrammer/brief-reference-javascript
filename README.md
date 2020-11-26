@@ -100,3 +100,12 @@ const m2 = t.map(value => "<li>" + value + </li>)
 const t = [1, 2, 3, 4, 5]
 const [first, second, ...rest] = t
 ```
+
+#### Define an object using object literals
+```
+const person = {
+  name: "Somebody",
+  age: 18,
+  education: "Engineer"
+}
+```
