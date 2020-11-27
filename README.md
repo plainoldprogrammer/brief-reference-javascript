@@ -114,3 +114,8 @@ const person = {
 ```
 console.log(object1.name);
 ```
+
+#### Reference a property of an object using field notation
+```
+console.log(object1[fieldName])
+```
