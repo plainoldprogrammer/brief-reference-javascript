@@ -109,3 +109,8 @@ const person = {
   education: "Engineer"
 }
 ```
+
+#### Reference a property of an object using dot notation
+```
+console.log(object1.name);
+```
