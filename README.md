@@ -119,3 +119,13 @@ console.log(object1.name);
 ```
 console.log(object1[fieldName])
 ```
+
+#### Add properties to an object on the fly using dot notation
+```
+object1.address = "Helsinki"
+```
+
+#### Add properties to an object on the fly using brackets notation
+```
+object1["secret number"] = 1234
+```
