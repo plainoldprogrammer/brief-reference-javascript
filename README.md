@@ -129,3 +129,16 @@ object1.address = "Helsinki"
 ```
 object1["secret number"] = 1234
 ```
+
+#### Define an arrow function in a normal way or with a shortcut
+```
+const sum = (p1, p2) => {
+  return (p1 + p2)
+}
+```
+
+```
+const sumShorthand = (p1, p2) => (
+  p1 + p2
+)
+```
