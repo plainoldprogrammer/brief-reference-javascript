@@ -142,3 +142,8 @@ const sumShorthand = (p1, p2) => (
   p1 + p2
 )
 ```
+
+#### Arrow function with a single parameter
+```
+const area = width => width * width;
+```
