@@ -147,3 +147,15 @@ const sumShorthand = (p1, p2) => (
 ```
 const area = width => width * width;
 ```
+
+#### Assign a method to an object by defining a property that is a function
+```
+const arto = {
+  name: "John Doe",
+  age: 18,
+  education: "PhD",
+  greeting: function () {
+    console.log("Hello, my name is "  + this.name)
+  }
+}
+```
