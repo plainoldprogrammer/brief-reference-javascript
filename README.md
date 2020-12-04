@@ -159,3 +159,24 @@ const arto = {
   }
 }
 ```
+
+#### Assign a method to an object after the creation of such object
+```
+const arto = {
+  name: "Arto",
+  age: 35,
+  education: "PhD",
+  greeting: function ()
+  {
+    console.log("Hello, this is " + this.name)
+  }
+}
+
+arto.greeting()
+
+arto.sayBye = function () {
+  console.log("Good bye, " + this.name)
+}
+
+arto.sayBye()
+```
