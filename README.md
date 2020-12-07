@@ -221,3 +221,13 @@ adam.greet()
 const janja = new Person("Janja Garnbret", 22);
 janja.greet()
 ```
+
+#### Destructure an object
+```
+props = {
+  name: "Arto Hellas",
+  age: 35,
+}
+
+const { name, age } = props;
+```
