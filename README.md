@@ -231,3 +231,11 @@ props = {
 
 const { name, age } = props;
 ```
+
+#### Make repeated calls to refresh function every second
+```
+setInterval(() => {
+  refresh()
+  counter += 1
+}, 1000)
+```
