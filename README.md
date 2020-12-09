@@ -239,3 +239,14 @@ setInterval(() => {
   counter += 1
 }, 1000)
 ```
+
+
+#### The correct way of using console log for debugging variables
+Instead of:
+```
+console.log('props value is ' + props)
+```
+Use:
+```
+console.log('props value is', props)
+```
