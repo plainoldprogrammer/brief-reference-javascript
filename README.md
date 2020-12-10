@@ -250,3 +250,15 @@ Use:
 ```
 console.log('props value is', props)
 ```
+
+#### Arrow function written in compact form
+Full form arrow function:
+```
+(note) => {
+  return note.id
+}
+```
+Compact form arrow function:
+```
+note => note.id
+```
