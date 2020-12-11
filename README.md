@@ -262,3 +262,13 @@ Compact form arrow function:
 ```
 note => note.id
 ```
+
+#### Use template string syntax
+Old:
+```
+console.log('importance of ' + id + ' needs to be toggled')
+```
+New:
+```
+console.log(`importance of ${id} needs to be toggled`)
+```
