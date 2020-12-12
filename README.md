@@ -272,3 +272,8 @@ New:
 ```
 console.log(`importance of ${id} needs to be toggled`)
 ```
+
+#### Convert to an integer
+```
+parseInt(id);
+```
