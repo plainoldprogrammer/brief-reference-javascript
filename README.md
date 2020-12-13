@@ -277,3 +277,28 @@ console.log(`importance of ${id} needs to be toggled`)
 ```
 parseInt(id);
 ```
+
+#### Create and modify an array with map
+```
+const persons = [
+  {
+    name: "Tony",
+    age: 30
+  },
+  {
+    name: "John",
+    age: 27
+  },
+  {
+    name: "Peter",
+    age: 21
+  }
+]
+
+const updatedPersons = persons.map(obj => {
+  return  { firstName: obj.name + " old", oldAge: obj.age * 2} 
+})
+
+console.log(persons);
+console.log(updatedPersons);
+```
