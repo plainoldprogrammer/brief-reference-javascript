@@ -315,3 +315,15 @@ function Car(make, model, year)
 const car1 = new Car("Eagle", "1993", "Tsuru");
 console.log(car1.make)
 ```
+
+#### Create an array with the lenght of each element of another array
+```
+const names = [
+  "The bear is white",
+  "The lion is the king",
+  "The cat is the traitor"
+]
+
+const charactersCount = names.map(x => x.length)
+console.log(charactersCount)
+```
