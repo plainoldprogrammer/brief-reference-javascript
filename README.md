@@ -302,3 +302,16 @@ const updatedPersons = persons.map(obj => {
 console.log(persons);
 console.log(updatedPersons);
 ```
+
+#### Create an instance of a user defined object type
+```
+function Car(make, model, year)
+{
+  this.make = make;
+  this.model = model;
+  this.year = year;
+}
+
+const car1 = new Car("Eagle", "1993", "Tsuru");
+console.log(car1.make)
+```
