@@ -327,3 +327,19 @@ const names = [
 const charactersCount = names.map(x => x.length)
 console.log(charactersCount)
 ```
+
+#### Define a class and instantiate an object
+```
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+
+  sayHello() {
+    console.log("Hello, I'm " + this.name);
+  }
+}
+
+let waitress = new Person("Elena");
+waitress.sayHello();
+```
