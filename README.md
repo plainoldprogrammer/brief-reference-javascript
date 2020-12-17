@@ -343,3 +343,9 @@ class Person {
 let waitress = new Person("Elena");
 waitress.sayHello();
 ```
+
+#### Remove 2 elements from an array
+```
+const position = id;
+this.servers.splice(position, 2);
+```
