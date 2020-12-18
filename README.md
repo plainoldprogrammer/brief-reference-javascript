@@ -349,3 +349,18 @@ waitress.sayHello();
 const position = id;
 this.servers.splice(position, 2);
 ```
+
+#### A simple promise
+```
+let promiseExample = new Promise((resolve, reject) => {
+  setTimeout(function() {
+    resolve('Success!');
+  }, 2000);
+});
+
+console.log("Some other code is executed");
+
+promiseExample.then((successMessage) => {
+  console.log("Yes! " + successMessage);
+});
+```
