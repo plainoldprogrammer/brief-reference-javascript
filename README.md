@@ -364,3 +364,12 @@ promiseExample.then((successMessage) => {
   console.log("Yes! " + successMessage);
 });
 ```
+
+
+#### Create an object with properties
+```
+let person = {
+  firstName: 'John',
+  lastName: 'Doe'
+};
+```
