@@ -373,3 +373,14 @@ let person = {
   lastName: 'Doe'
 };
 ```
+
+#### Access object properties using array notation
+```
+let person = {
+  firstName: 'John',
+  lastName: 'Doe'
+};
+
+console.log(person['firstName']);
+console.log(person['lastName']);
+```
