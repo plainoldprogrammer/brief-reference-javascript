@@ -384,3 +384,14 @@ let person = {
 console.log(person['firstName']);
 console.log(person['lastName']);
 ```
+
+#### Access to a property that contains spaces
+```
+let person = {
+  'full name': 'John Doe'
+};
+
+console.log(person['full name']);
+
+NOTE: Is not possible to use the dot notation to access to properties that contains spaces.
+```
