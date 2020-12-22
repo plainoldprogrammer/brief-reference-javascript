@@ -385,7 +385,7 @@ console.log(person['firstName']);
 console.log(person['lastName']);
 ```
 
-#### Access to a property that contains spaces
+#### Access to a property that contains spaces in their name
 ```
 let person = {
   'full name': 'John Doe'
@@ -394,4 +394,18 @@ let person = {
 console.log(person['full name']);
 
 NOTE: Is not possible to use the dot notation to access to properties that contains spaces.
+```
+
+#### Iterate over properties of an object using for...in loop
+```
+let person = {
+  name: 'John',
+  age: 32,
+  city: 'New York',
+  country: 'USA'
+}
+
+for (let key in person) {
+  console.log(key + ": " + person[key]);
+}
 ```
