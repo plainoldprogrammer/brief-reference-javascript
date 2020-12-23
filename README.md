@@ -409,3 +409,17 @@ for (let key in person) {
   console.log(key + ": " + person[key]);
 }
 ```
+
+#### Add a method to an existing object
+```
+let person = {
+  name: 'John',
+  city: 'New York'
+}
+
+person.greet = function() {
+  console.log('Hi! I am ' + this.name + ' from ' + this.city);
+}
+
+person.greet();
+```
