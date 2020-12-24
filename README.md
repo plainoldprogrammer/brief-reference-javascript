@@ -423,3 +423,18 @@ person.greet = function() {
 
 person.greet();
 ```
+
+#### Define a function and add it to an object
+```
+let person = {
+  name: 'John',
+  city: 'New York'
+}
+
+function greet() {
+  console.log('Hello, I am' + this.name + ' from ' + this.city);
+}
+
+person.greet = greet;
+person.greet();
+```
