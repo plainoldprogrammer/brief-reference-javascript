@@ -438,3 +438,16 @@ function greet() {
 person.greet = greet;
 person.greet();
 ```
+
+#### Define methods using the object literal syntax
+```
+let person = {
+  name: 'John',
+  city: 'New York',
+  greet: function() {
+    console.log("Hello, I am " + this.name + " from " + this.city);
+  }
+}
+
+console.log(person.greet());
+```
