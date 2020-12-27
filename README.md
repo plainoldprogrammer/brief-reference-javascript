@@ -464,3 +464,12 @@ let person = {
 
 console.log(person.greet());
 ```
+
+#### Shorten array
+```
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log(numbers);
+
+numbers.length = 4;
+console.log(numbers);
+```
