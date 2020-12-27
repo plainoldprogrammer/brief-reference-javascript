@@ -451,3 +451,16 @@ let person = {
 
 console.log(person.greet());
 ```
+
+#### Shorthand to define a method in an object
+```
+let person = {
+  name: 'John',
+  city: 'New York',
+  greet() {
+    console.log("Hello, I am " + this.name + " from " + this.city);
+  }
+}
+
+console.log(person.greet());
+```
