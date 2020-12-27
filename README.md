@@ -681,3 +681,10 @@ console.log(ageJohn, ageSammy);
 ```
 console.log(2 ** 4);
 ```
+
+### Create a multiline
+```
+console.log('This is a simple multi line \n\
+That is created with JavaScript \n\
+and can be checked on the console.');
+```
