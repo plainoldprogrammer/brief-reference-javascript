@@ -552,3 +552,30 @@ console.log(error + '');
 const allData = [1, undefined, NaN, 2, null, '@working', true, 3, false];
 console.log(allData.filter(Boolean));
 ```
+
+#### Load data from a file
+```
+function loadJSON(callback) {
+  var xobj = new XMLHttpRequest();
+  xobj.overrideMimeType("data.json");
+  xobj.open('GET', './js/data.json', false);
+  xobj.onreadystatechange = function () {
+    if (xobj.readyState == 4 && xobj.status == "200") {
+      callback(xobj.responseText);
+    }
+  };
+  xobj.send(null);
+}
+
+function loadData() {
+  loadJSON(function(response) {
+    result = JSON.parse(response);
+  });
+}
+
+let result;
+loadData(result)
+
+
+NOTE: The file data.json must exists.
+```
