@@ -664,3 +664,8 @@ console.log(hobby);
 
 NOTE: This is a very bad practice.
 ```
+
+#### Log the global object
+```
+console.log(window);
+```
