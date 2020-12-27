@@ -639,3 +639,8 @@ if (phone === undefined) {
   console.log('The phone is not undefined');
 }
 ```
+
+#### Show a bug in the typeof operator when using null
+```
+console.log(typeof null);
+```
