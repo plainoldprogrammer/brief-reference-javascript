@@ -579,3 +579,10 @@ loadData(result)
 
 NOTE: The file data.json must exists.
 ```
+
+#### Check if a variable exists
+```
+if (typeof variable !== 'undefined') {
+  // the variable is defined
+}
+```
