@@ -511,3 +511,18 @@ let thirdChildren = new Person("Cesar", "Oz", 24);
 
 console.table({firstChildren, secondChildren, thirdChildren});
 ```
+
+#### Log an object into a table with specific columns
+```
+function Person(firstName, lastName, age) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.age = age;
+}
+
+let firstChildren = new Person("Alberto", "Oz", 35);
+let secondChildren = new Person("Brenda", "Oz", 29);
+let thirdChildren = new Person("Cesar", "Oz", 24);
+
+console.table({firstChildren, secondChildren, thirdChildren});
+```
