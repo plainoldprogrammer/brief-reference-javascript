@@ -526,3 +526,11 @@ let thirdChildren = new Person("Cesar", "Oz", 24);
 
 console.table({firstChildren, secondChildren, thirdChildren});
 ```
+
+#### Remove duplicated elements from an array
+```
+const names = ['Juan', 18, 'Juan', 'Alberto', 'Juan', 'Eduardo', 18];
+
+console.log(names);
+console.log([... new Set(names)]);
+```
