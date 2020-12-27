@@ -546,3 +546,9 @@ console.log(+error);
 const error = 404;
 console.log(error + '');
 ```
+
+#### Remove all falsy values from an array
+```
+const allData = [1, undefined, NaN, 2, null, '@working', true, 3, false];
+console.log(allData.filter(Boolean));
+```
