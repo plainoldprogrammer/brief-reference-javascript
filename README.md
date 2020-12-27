@@ -617,3 +617,14 @@ printFullName('Elon', 'Musk');
 let javaScriptIsFun = true;
 console.log(typeof javaScriptIsFun);
 ```
+
+#### Difference between undefined and null
+```
+let phone = undefined;
+console.log(phone);
+console.log(typeof phone);
+
+let year = null;
+console.log(year);
+console.log(typeof year);
+```
