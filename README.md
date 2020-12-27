@@ -656,3 +656,11 @@ for (let i = myName.length - 1; i >= 0; i--) {
 
 console.log(reversedName);
 ```
+
+#### Create a property on the global object
+```
+hobby = "programming";
+console.log(hobby);
+
+NOTE: This is a very bad practice.
+```
