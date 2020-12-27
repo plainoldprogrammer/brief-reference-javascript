@@ -481,3 +481,18 @@ let age = 23;
 age < 21 && console.log('Cant drink alcohol');
 age >= 21 && console.log('Can drink alcohol');
 ```
+
+#### Log an array into a table
+```
+function Person(firstName, lastName, age) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.age = age;
+}
+
+let firstChildren = new Person("Alberto", "Oz", 35);
+let secondChildren = new Person("Brenda", "Oz", 29);
+let thirdChildren = new Person("Cesar", "Oz", 24);
+
+console.table([firstChildren, secondChildren, thirdChildren]);
+```
