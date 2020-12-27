@@ -595,3 +595,14 @@ var someText = "Hello World!";
   console.log(message);
 })(someText);
 ```
+
+#### Default parameters
+```
+function printFullName(firstName = 'John', lastName = 'Doe') {
+  console.log(`${firstName} ${lastName}`);
+}
+
+printFullName();
+printFullName('Elon');
+printFullName('Elon', 'Musk');
+```
