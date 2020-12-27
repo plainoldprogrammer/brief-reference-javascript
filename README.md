@@ -669,3 +669,10 @@ NOTE: This is a very bad practice.
 ```
 console.log(window);
 ```
+
+#### Log multiple values
+```
+const ageJohn = 2037 - 1991;
+const ageSammy = 2037 - 2018;
+console.log(ageJohn, ageSammy);
+```
