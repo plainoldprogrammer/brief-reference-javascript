@@ -606,3 +606,8 @@ printFullName();
 printFullName('Elon');
 printFullName('Elon', 'Musk');
 ```
+
+#### Import a JavaScript file as a module
+```
+<script src="js/js.js" type="module"></script>
+```
