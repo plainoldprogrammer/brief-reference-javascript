@@ -644,3 +644,15 @@ if (phone === undefined) {
 ```
 console.log(typeof null);
 ```
+
+#### Reverse a string
+```
+const myName = 'John Doe';
+let reversedName = '';
+
+for (let i = myName.length - 1; i >= 0; i--) {
+  reversedName += myName[i];
+}
+
+console.log(reversedName);
+```
