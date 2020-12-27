@@ -534,3 +534,9 @@ const names = ['Juan', 18, 'Juan', 'Alberto', 'Juan', 'Eduardo', 18];
 console.log(names);
 console.log([... new Set(names)]);
 ```
+
+#### Convert a string to a number
+```
+const error = "404";
+console.log(+error);
+```
