@@ -473,3 +473,11 @@ console.log(numbers);
 numbers.length = 4;
 console.log(numbers);
 ```
+
+#### Short circuit conditionals
+```
+let age = 23;
+
+age < 21 && console.log('Cant drink alcohol');
+age >= 21 && console.log('Can drink alcohol');
+```
