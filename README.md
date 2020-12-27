@@ -611,3 +611,9 @@ printFullName('Elon', 'Musk');
 ```
 <script src="js/js.js" type="module"></script>
 ```
+
+#### Log the type of a value
+```
+let javaScriptIsFun = true;
+console.log(typeof javaScriptIsFun);
+```
