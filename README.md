@@ -628,3 +628,14 @@ let year = null;
 console.log(year);
 console.log(typeof year);
 ```
+
+#### Check that a variable is not null
+```
+let phone;
+
+if (phone === undefined) {
+  console.log('You should define a value for the phone');
+} else {
+  console.log('The phone is not undefined');
+}
+```
