@@ -676,3 +676,8 @@ const ageJohn = 2037 - 1991;
 const ageSammy = 2037 - 2018;
 console.log(ageJohn, ageSammy);
 ```
+
+#### Use the exponentiation operator
+```
+console.log(2 ** 4);
+```
