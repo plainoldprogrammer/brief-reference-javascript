@@ -586,3 +586,12 @@ if (typeof variable !== 'undefined') {
   // the variable is defined
 }
 ```
+
+#### Pass arguments into an IIFE
+```
+var someText = "Hello World!";
+
+(function(message) {
+  console.log(message);
+})(someText);
+```
