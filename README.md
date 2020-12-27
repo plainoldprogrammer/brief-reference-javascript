@@ -540,3 +540,9 @@ console.log([... new Set(names)]);
 const error = "404";
 console.log(+error);
 ```
+
+#### Convert a number to a string
+```
+const error = 404;
+console.log(error + '');
+```
