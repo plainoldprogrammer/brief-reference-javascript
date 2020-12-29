@@ -695,3 +695,10 @@ console.log(`This is a simple multiline
 that is created using the template
 literal syntax with javascript`);
 ```
+
+#### Check the value of NaN
+```
+console.log(typeof NaN);
+
+NOTE: NaN actually means "invalid number".
+```
