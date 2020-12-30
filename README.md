@@ -707,5 +707,10 @@ NOTE: NaN actually means "invalid number".
 ```
 console.log(parseInt("123qwerty"));	// Returns 123.
 
-console.log(Number("123qwerty"));		// Return NaN.
+console.log(Number("123qwerty"));	// Return NaN.
+```
+
+#### Declare an empty object
+```
+{}
 ```
