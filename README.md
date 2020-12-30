@@ -702,3 +702,10 @@ console.log(typeof NaN);
 
 NOTE: NaN actually means "invalid number".
 ```
+
+#### Difference between parseInt and Number
+```
+console.log(parseInt("123qwerty"));	// Returns 123.
+
+console.log(Number("123qwerty"));		// Return NaN.
+```
