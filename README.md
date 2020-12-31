@@ -714,3 +714,9 @@ console.log(Number("123qwerty"));	// Return NaN.
 ```
 {}
 ```
+
+#### Evaluate a falsy value
+```
+console.log(Boolean(0));
+```
+
