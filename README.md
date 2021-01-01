@@ -720,3 +720,11 @@ console.log(Number("123qwerty"));	// Return NaN.
 console.log(Boolean(0));
 ```
 
+#### Strict equal operator vs loose equal operator
+```
+const age = '18';
+
+if (age === 18) console.log('You just became an adult (strict)');
+
+if (age == 18) console.log('You just become an adult (loose)')
+```
