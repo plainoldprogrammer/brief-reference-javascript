@@ -715,6 +715,11 @@ console.log(Number("123qwerty"));	// Return NaN.
 console.log(String(23));
 ```
 
+#### Convert a string to a number
+```
+console.log(Number("23"));
+```
+
 #### Type coercion
 ```
 console.log('23' - '10' + 3);
