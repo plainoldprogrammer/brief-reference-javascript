@@ -747,3 +747,9 @@ if (age === 18) console.log('You just became an adult (strict)');
 
 if (age == 18) console.log('You just become an adult (loose)')
 ```
+
+#### Use strict mode
+```
+"use strict"
+```
+
