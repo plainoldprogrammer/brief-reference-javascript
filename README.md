@@ -753,3 +753,26 @@ if (age == 18) console.log('You just become an adult (loose)')
 "use strict"
 ```
 
+#### Switch statement
+```
+const day = 'wednesday';
+
+switch (day) {
+  case 'monday':
+    console.log('Need to go to work');
+    break;
+  case 'tuesday':
+    console.log('Continue working hard');
+    break;
+  case 'wednesday':
+    console.log('Go to the movies');
+    break;
+  case 'tursday':
+  case 'friday':
+    console.log('Go to party');
+    break;
+  default:
+    console.log('Rest');
+    break;
+}
+```
