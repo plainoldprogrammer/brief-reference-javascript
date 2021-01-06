@@ -776,3 +776,10 @@ switch (day) {
     break;
 }
 ```
+
+#### Conditional operator as an expression
+```
+const age = 18;
+const drink = age >= 18 ? 'wine' : 'water';
+console.log(drink);
+```
