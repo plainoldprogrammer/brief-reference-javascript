@@ -783,3 +783,8 @@ const age = 18;
 const drink = age >= 18 ? 'wine' : 'water';
 console.log(drink);
 ```
+
+#### Conditional operator inside a template literal
+```
+console.log(`I like to drink ${age >= 18 ? 'beer' : 'water'}`);
+```
