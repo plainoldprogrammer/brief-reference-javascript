@@ -788,3 +788,8 @@ console.log(drink);
 ```
 console.log(`I like to drink ${age >= 18 ? 'beer' : 'water'}`);
 ```
+
+#### Log the console object
+```
+console.log(console);
+```
