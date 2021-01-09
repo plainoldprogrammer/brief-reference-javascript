@@ -793,3 +793,12 @@ console.log(`I like to drink ${age >= 18 ? 'beer' : 'water'}`);
 ```
 console.log(console);
 ```
+
+#### Function declaration
+```
+function calculateAge(birthYear) {
+  return 2037 - birthYear;
+}
+
+console.log(calculateAge(1950));
+```
