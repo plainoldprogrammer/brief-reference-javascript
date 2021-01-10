@@ -802,3 +802,12 @@ function calculateAge(birthYear) {
 
 console.log(calculateAge(1950));
 ```
+
+#### Function expression
+```
+const calculateAge = function(birthYear) {
+  return 2037 - birthYear;
+}
+
+console.log(calculateAge(1950));
+```
