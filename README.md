@@ -811,3 +811,9 @@ const calculateAge = function(birthYear) {
 
 console.log(calculateAge(1950));
 ```
+
+#### Array function
+```
+const calculateAge = birthYear => 2037 - birthYear;
+console.log(calculateAge(1950));
+```
