@@ -812,8 +812,20 @@ const calculateAge = function(birthYear) {
 console.log(calculateAge(1950));
 ```
 
-#### Array function
+#### Arrow function
 ```
 const calculateAge = birthYear => 2037 - birthYear;
 console.log(calculateAge(1950));
+```
+
+#### Arrow function with boddy
+```
+const yearsUntilRetirement = birthYear => {
+  const age = 2037 - birthYear;
+  const retirement = 65 - age;
+
+  return retirement;
+}
+
+console.log(yearsUntilRetirement(1989));
 ```
