@@ -841,3 +841,8 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 
 console.log(yearsUntilRetirement(1989, 'John'));
 ```
+
+#### Create an array using literal syntax
+```
+const friends = ['James', 'Willy', 'Davis'];
+```
