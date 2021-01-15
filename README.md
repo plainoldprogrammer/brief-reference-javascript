@@ -846,3 +846,8 @@ console.log(yearsUntilRetirement(1989, 'John'));
 ```
 const friends = ['James', 'Willy', 'Davis'];
 ```
+
+#### Create an array using the Array function
+```
+const years = new Array(1991, 1984, 2008, 2020);
+```
