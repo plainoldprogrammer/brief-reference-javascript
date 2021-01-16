@@ -851,3 +851,9 @@ const friends = ['James', 'Willy', 'Davis'];
 ```
 const years = new Array(1991, 1984, 2008, 2020);
 ```
+
+#### Get the last element of an array
+```
+const friends = ['Jane', 'John', 'Kim'];
+console.log(friends[friends.length - 1]);
+```
