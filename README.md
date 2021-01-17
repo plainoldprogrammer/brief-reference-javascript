@@ -857,3 +857,11 @@ const years = new Array(1991, 1984, 2008, 2020);
 const friends = ['Jane', 'John', 'Kim'];
 console.log(friends[friends.length - 1]);
 ```
+
+#### Add an element to the end of an array
+```
+const friends = ['Jane', 'John', 'Kim'];
+friends.push('Jay');
+
+NOTE:	push() returns the new size of the array.
+```
