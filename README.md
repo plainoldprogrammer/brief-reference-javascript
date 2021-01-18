@@ -865,3 +865,11 @@ friends.push('Jay');
 
 NOTE:	push() returns the new size of the array.
 ```
+
+#### Add an element to begining of an array
+```
+const friends = ['Jane', 'John', 'Kim'];
+friends.unshift('Jay');
+
+NOTE:	unshift() returns the new size of the array.
+```
