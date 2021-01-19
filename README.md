@@ -866,10 +866,18 @@ friends.push('Jay');
 NOTE:	push() returns the new size of the array.
 ```
 
-#### Add an element to begining of an array
+#### Add an element to beginning of an array
 ```
 const friends = ['Jane', 'John', 'Kim'];
 friends.unshift('Jay');
 
 NOTE:	unshift() returns the new size of the array.
+```
+
+#### Remove the last element of an array
+```
+const friends = ['Michael', 'Steven', 'Peter'];
+friends.pop();
+
+NOTE:	pop() returns the removed element.
 ```
