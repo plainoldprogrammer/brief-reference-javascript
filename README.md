@@ -876,8 +876,16 @@ NOTE:	unshift() returns the new size of the array.
 
 #### Remove the last element of an array
 ```
-const friends = ['Michael', 'Steven', 'Peter'];
+const friends = ['Jane', 'John', 'Kim'];
 friends.pop();
 
 NOTE:	pop() returns the removed element.
+```
+
+#### Remove the first element of an array
+```
+const friends = ['Jane', 'John', 'Kim'];
+const removed = friends.shift();
+
+NOTE:	shift() returns the removed element.
 ```
