@@ -889,3 +889,11 @@ const removed = friends.shift();
 
 NOTE:	shift() returns the removed element.
 ```
+
+#### Get the index of an element
+```
+const friends = ['Jane', 'John', 'Kim'];
+console.log(friends.indexOf('Ptener'));
+
+NOTE:	If the element doesnt exists indexOf() returns -1.
+```
