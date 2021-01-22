@@ -897,3 +897,13 @@ console.log(friends.indexOf('Ptener'));
 
 NOTE:	If the element doesnt exists indexOf() returns -1.
 ```
+
+#### Determine if an element exist in an array
+```
+const friends = ['Jane', 'John', 'Kim'];
+console.log(friends.includes('Kim'));
+
+NOTE 1:	includes() is similar to indexOf() but returns true or false.
+
+NOTE 2:	This methods uses strict equality.
+```
