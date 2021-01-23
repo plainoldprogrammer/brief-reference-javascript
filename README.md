@@ -907,3 +907,14 @@ NOTE 1:	includes() is similar to indexOf() but returns true or false.
 
 NOTE 2:	This methods uses strict equality.
 ```
+
+#### Log two arrays to the same Line
+```
+const calculateTip = function(bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+
+const bills = [500, 57, 30];
+const tips = [calculateTip(bills[0]), calculateTip(bills[1]), calculateTip(bills[2]) ];
+console.log(bills, tips);
+```
