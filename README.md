@@ -918,3 +918,14 @@ const bills = [500, 57, 30];
 const tips = [calculateTip(bills[0]), calculateTip(bills[1]), calculateTip(bills[2]) ];
 console.log(bills, tips);
 ```
+
+#### Create an object using object literal syntax
+```
+const softwareDeveloper = {
+  firstName: 'John',
+  lastName: 'Doe',
+  age: 2021 - 1980,
+  job: 'developer',
+  friends: ['Bill', 'Steve', 'Elon']
+};
+```
