@@ -929,3 +929,19 @@ const softwareDeveloper = {
   friends: ['Bill', 'Steve', 'Elon']
 };
 ```
+
+#### Use an expression in the bracket notation
+```
+const person = {
+  firstName: 'John',
+  lastName: 'Doe',
+  age: 2021 - 1980,
+  job: 'developer',
+  friends: ['Bill', 'Steve', 'Elon']
+};
+
+const nameKey = 'Name';
+
+console.log(person['first' + nameKey])
+console.log(person['last' + nameKey]);
+```
