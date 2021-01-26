@@ -945,3 +945,22 @@ const nameKey = 'Name';
 console.log(person['first' + nameKey])
 console.log(person['last' + nameKey]);
 ```
+
+#### Add a function to an object
+```
+const person = {
+  firstName: 'John',
+  lastName: 'Doe',
+  age: 2021 - 1980,
+  job: 'developer',
+  friends: ['Bill', 'Steve', 'Elon'],
+  hasDriversLicense: true,
+
+  calcAge: function(birthYear) {
+    return 2021 - birthYear;
+  }
+};
+
+console.log(person.calcAge(1995));
+console.log(person['calcAge'](1995));
+```
