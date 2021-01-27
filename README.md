@@ -964,3 +964,9 @@ const person = {
 console.log(person.calcAge(1995));
 console.log(person['calcAge'](1995));
 ```
+
+#### Generate a random number between 1 and 6
+```
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+```
