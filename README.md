@@ -970,3 +970,12 @@ console.log(person['calcAge'](1995));
 let dice = Math.trunc(Math.random() * 6) + 1;
 console.log(dice);
 ```
+
+#### Merge two arrays
+```
+const array1 = ['a', 'b', 'c'];
+const array2 = ['d', 'e', 'f'];
+const array3 = array1.concat(array2);
+
+console.log(array3);
+```
