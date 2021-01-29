@@ -979,3 +979,8 @@ const array3 = array1.concat(array2);
 
 console.log(array3);
 ```
+
+#### Set a breakpoint directly on the code
+```
+debugger;
+```
