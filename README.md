@@ -984,3 +984,8 @@ console.log(array3);
 ```
 debugger;
 ```
+
+#### Get an element from the dom by their class
+```
+document.querySelector('.message');
+```
