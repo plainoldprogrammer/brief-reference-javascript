@@ -989,3 +989,8 @@ debugger;
 ```
 document.querySelector('.message');
 ```
+
+#### Change the text content of an element from the dom
+```
+document.querySelector('.message').textContent = 'Correct Number';
+```
