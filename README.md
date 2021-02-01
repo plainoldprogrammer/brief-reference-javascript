@@ -994,3 +994,8 @@ document.querySelector('.message');
 ```
 document.querySelector('.message').textContent = 'Correct Number';
 ```
+
+#### Change the background color of the body from the dom
+```
+document.querySelector('body').style.backgroundColor = 'green';
+```
