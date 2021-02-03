@@ -999,3 +999,8 @@ document.querySelector('.message').textContent = 'Correct Number';
 ```
 document.querySelector('body').style.backgroundColor = 'green';
 ```
+
+#### Change the width of an element through their class name
+```
+document.querySelector('.number').style.width = '30rem';
+```
