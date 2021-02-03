@@ -1004,3 +1004,8 @@ document.querySelector('body').style.backgroundColor = 'green';
 ```
 document.querySelector('.number').style.width = '30rem';
 ```
+
+#### Select multiple elements with the same class
+```
+const btnsOpenModal = document.querySelectorAll('.show-modal');
+```
