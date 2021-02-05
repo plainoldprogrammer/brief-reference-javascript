@@ -1009,3 +1009,10 @@ document.querySelector('.number').style.width = '30rem';
 ```
 const btnsOpenModal = document.querySelectorAll('.show-modal');
 ```
+
+#### Remove a class from an element
+```
+message.classList.remove('hidden');
+
+NOTE:	The class name should be specified without the period.
+```
