@@ -1016,3 +1016,10 @@ message.classList.remove('hidden');
 
 NOTE:	The class name should be specified without the period.
 ```
+
+#### Add a class to an element
+```
+message.classList.add('hidden');
+
+NOTE:	The class name should be specified without the period.
+```
