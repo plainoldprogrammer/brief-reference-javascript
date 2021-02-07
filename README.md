@@ -1030,3 +1030,9 @@ document.addEventListener('keydown', function (e) {
   console.log(e.key);
 });
 ```
+
+#### Check if an element contains a specific class
+```
+const modal = document.querySelector('.message');
+modal.classList.contains('hidden');
+```
