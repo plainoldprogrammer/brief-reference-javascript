@@ -1023,3 +1023,10 @@ message.classList.add('hidden');
 
 NOTE:	The class name should be specified without the period.
 ```
+
+#### Add an event handler each time a key is pressed
+```
+document.addEventListener('keydown', function (e) {
+  console.log(e.key);
+});
+```
