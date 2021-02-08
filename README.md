@@ -1036,3 +1036,12 @@ document.addEventListener('keydown', function (e) {
 const modal = document.querySelector('.message');
 modal.classList.contains('hidden');
 ```
+
+#### Select an element by id
+```
+const score0El = document.querySelector('#score--0');
+
+const score1El = document.getElementById('score--1');
+
+NOTE:	getElementById is suppose to be a little faster.
+```
