@@ -1045,3 +1045,9 @@ const score1El = document.getElementById('score--1');
 
 NOTE:	getElementById is suppose to be a little faster.
 ```
+
+#### Change dynamically the src of an image
+```
+const diceEl = document.querySelector('.dice');
+diceEl.src = `dice-${dice}.png`;
+```
