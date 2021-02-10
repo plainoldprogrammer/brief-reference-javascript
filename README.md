@@ -1051,3 +1051,9 @@ NOTE:	getElementById is suppose to be a little faster.
 const diceEl = document.querySelector('.dice');
 diceEl.src = `dice-${dice}.png`;
 ```
+
+#### Add a class to an element if it doesnt have of remove it if it has
+```
+const player0El = document.querySelector('.player--0');
+player0El.classList.toggle('player--active');
+```
