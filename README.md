@@ -1057,3 +1057,17 @@ diceEl.src = `dice-${dice}.png`;
 const player0El = document.querySelector('.player--0');
 player0El.classList.toggle('player--active');
 ```
+
+#### Skip two elements at the time of destructuring
+```
+'use strict';
+
+const cities = ['Dallas', 'Vancouver', 'Chicago', 'Seattle'];
+const [firstCityToVisit, , , lastCityToVisit] = cities;
+
+console.log(
+  `firstCityToVisit = ${firstCityToVisit}\nlastCityToVisit = ${lastCityToVisit}`
+);
+
+NOTE:	Add a comma for each element that you want to skip.
+```
