@@ -1071,3 +1071,12 @@ console.log(
 
 NOTE:	Add a comma for each element that you want to skip.
 ```
+
+#### Destructure an array into a variable and put the remainder on their own array
+```
+const cities = ['Dallas', 'Vancouver', 'Chicago', 'Seattle'];
+const [principalCity, ...rest] = cities;
+console.log(`principalCity = ${principalCity}\nother cities = ${rest}`);
+
+NOTE:	Doesn't necessarily need call the array rest.
+```
