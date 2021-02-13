@@ -1080,3 +1080,19 @@ console.log(`principalCity = ${principalCity}\nother cities = ${rest}`);
 
 NOTE:	Doesn't necessarily need call the array rest.
 ```
+
+#### Provide a default value for destructuring an array with undefined values
+```
+const companies = ['apple', 'amazon', undefined, 'microsft', 'tesla'];
+const [
+  bestLaptops = 'unknown',
+  bestStore = 'unknown',
+  some = 'unknown',
+  bestOperatingSystems = 'unknown',
+  bestCars = 'unknown',
+] = companies;
+
+console.log(
+  `bestLaptops =${bestLaptops}\nbestStore = ${bestStore}\nsome = ${some}\nbestOperatingSystems = ${bestOperatingSystems}\nbestCars = ${bestCars}\n`
+);
+```
