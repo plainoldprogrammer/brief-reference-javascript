@@ -1096,3 +1096,23 @@ console.log(
   `bestLaptops =${bestLaptops}\nbestStore = ${bestStore}\nsome = ${some}\nbestOperatingSystems = ${bestOperatingSystems}\nbestCars = ${bestCars}\n`
 );
 ```
+
+#### Rename a property at the time of destructuring
+```
+const consoles = {
+  favorite: 'Snes',
+  powerful: 'PS4',
+  funny: 'Xbox',
+};
+
+const {
+  favorite,
+  cheapest: nonExistent = 'Non existent',
+  powerful,
+  funny,
+} = consoles;
+
+console.log(
+  `favorite = ${favorite}\ncheapest = ${nonExistent}\npowerful = ${powerful}\nfunny = ${funny}`
+);
+```
