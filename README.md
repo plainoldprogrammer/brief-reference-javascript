@@ -1116,3 +1116,15 @@ console.log(
   `favorite = ${favorite}\ncheapest = ${nonExistent}\npowerful = ${powerful}\nfunny = ${funny}`
 );
 ```
+
+#### Destructure only one property from an object
+```
+const consoles = {
+  favorite: 'Snes',
+  powerful: 'PS4',
+  funny: 'Xbox',
+};
+
+const { powerful } = consoles;
+console.log(powerful);
+```
