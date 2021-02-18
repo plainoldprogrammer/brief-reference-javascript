@@ -1128,3 +1128,15 @@ const consoles = {
 const { powerful } = consoles;
 console.log(powerful);
 ```
+
+#### Destructure and rename only one property from an object
+```
+const consoles = {
+  favorite: 'Snes',
+  powerful: 'PS2',
+  funny: 'Xbox',
+};
+
+const { powerful: mostSelled } = consoles;
+console.log(mostSelled);
+```
