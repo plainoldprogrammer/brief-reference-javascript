@@ -1140,3 +1140,21 @@ const consoles = {
 const { powerful: mostSelled } = consoles;
 console.log(mostSelled);
 ```
+
+#### Copy one object to another object and have 2 different objects
+```
+const jessica2 = {
+  firstName: 'Jessica',
+  lastName: 'Williams',
+  age: 27,
+};
+
+const jessicaCopy = Object.assign({}, jessica2);
+jessicaCopy.lastName = 'Davis';
+
+console.log('Before marriage:', jessica2);
+console.log('After marriage:', jessicaCopy);
+
+NOTE:	This technique works only on the first level.
+	Because of this, this is called "Shallow Copy".
+```
