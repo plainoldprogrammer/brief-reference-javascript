@@ -1158,3 +1158,11 @@ console.log('After marriage:', jessicaCopy);
 NOTE:	This technique works only on the first level.
 	Because of this, this is called "Shallow Copy".
 ```
+
+#### Switch variables with destructuring
+```
+let [main, , secondary] = restaurant.categories;
+[main, secondary] = [secondary, main];
+
+console.log(main, secondary);
+```
