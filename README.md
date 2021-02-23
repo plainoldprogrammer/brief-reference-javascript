@@ -1174,3 +1174,16 @@ const nested = [2, 4, [5, 6]];
 const [i, , [j, k]] = nested;
 console.log(i, j, j);
 ```
+
+#### Destructure assigment
+```
+let a = 111;
+let b = 999;
+const obj = { a: 23, b: 7, c: 14 };
+
+({ a, b } = obj);
+console.log(a, b);
+
+NOTE:	When destrucuring a and b, must be wrapping inside parenthesis
+	otherwise JavaScript creates a code block an generate an error.
+```
