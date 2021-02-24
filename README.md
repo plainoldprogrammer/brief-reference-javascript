@@ -1187,3 +1187,9 @@ console.log(a, b);
 NOTE:	When destrucuring a and b, must be wrapping inside parenthesis
 	otherwise JavaScript creates a code block an generate an error.
 ```
+
+#### Create an array with the values from another array using the spread operator
+```
+const arr = [7, 8, 9];
+const newArr = [1, 2, ...arr];
+```
