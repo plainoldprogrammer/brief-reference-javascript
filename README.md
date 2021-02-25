@@ -1193,3 +1193,7 @@ NOTE:	When destrucuring a and b, must be wrapping inside parenthesis
 const arr = [7, 8, 9];
 const newArr = [1, 2, ...arr];
 ```
+#### Get the individual values from an array
+```
+console.log(...someArray);
+```
