@@ -1198,3 +1198,12 @@ const newArr = [1, 2, ...arr];
 ```
 console.log(...someArray);
 ```
+
+#### Merge 2 arays using the spread operator
+```
+const programmingLanguages = ['JavaScript', 'TypeScript'];
+const frameworks = ['Angular', 'React', 'Vue'];
+
+const technologies = [...programmingLanguages, ...frameworks];
+console.log(technologies);
+```
