@@ -1207,3 +1207,12 @@ const frameworks = ['Angular', 'React', 'Vue'];
 const technologies = [...programmingLanguages, ...frameworks];
 console.log(technologies);
 ```
+
+#### Create an array from a string using the spread operator
+```
+const str = 'Jonas';
+const letters = [...str, ' ', 'S.'];
+console.log(letters);
+
+NOTE:	arrays, string, maps, sets are iterable. Objects are not.
+```
