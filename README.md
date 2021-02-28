@@ -1216,3 +1216,12 @@ console.log(letters);
 
 NOTE:	arrays, string, maps, sets are iterable. Objects are not.
 ```
+
+#### Read 3 times from the prompt and create an array
+```
+const ingredients = [
+  prompt("Let's make pasta! Ingredient 1?s"),
+  prompt("Let's make pasta! Ingredient 2?s"),
+  prompt("Let's make pasta! Ingredient 3?s"),
+];
+```
