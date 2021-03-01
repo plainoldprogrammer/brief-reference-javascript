@@ -1225,3 +1225,9 @@ const ingredients = [
   prompt("Let's make pasta! Ingredient 3?s"),
 ];
 ```
+
+#### Collect the unused values in the destructuring assigment using rest pattern
+```
+const [a, b, ...others] = [1, 2, 3, 4, 5];
+console.log(a, b, others);
+```
