@@ -1264,3 +1264,14 @@ const add = function (...numbers) {
 const x = [23, 5, 7];
 add(...x);
 ```
+
+#### Use the AND operator to call a function
+```
+if (restaurant.orderPizza) {
+  restaurant.orderPizza('mushrooms', 'spinach');
+}
+
+Can be replaced using the and operator:
+
+restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach');
+````
