@@ -1275,3 +1275,16 @@ Can be replaced using the and operator:
 
 restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach');
 ````
+
+#### Use the nullish coalescing operator
+```
+restaurant.numGuests = 0;
+const guests = restaurant.numGuests || 10;
+console.log(guests);
+
+Can be fixes using the nullish coalescing operator:
+
+// Nullish: null and undefined (NOT 0 or '')
+const guestCorrect = restaurant.numGuests ?? 10;
+console.log(guestCorrect);
+```
