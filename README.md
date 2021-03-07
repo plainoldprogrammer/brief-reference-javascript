@@ -1288,3 +1288,10 @@ Can be fixes using the nullish coalescing operator:
 const guestCorrect = restaurant.numGuests ?? 10;
 console.log(guestCorrect);
 ```
+
+#### Use the for of loop
+```
+const cities = ['Los Angeles', 'Kansas City', 'Dallas'];
+
+for (const city of cities) console.log(city);
+```
