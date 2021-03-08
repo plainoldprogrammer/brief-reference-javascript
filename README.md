@@ -1295,3 +1295,16 @@ const cities = ['Los Angeles', 'Kansas City', 'Dallas'];
 
 for (const city of cities) console.log(city);
 ```
+
+#### Get the index and the value of each element in a for of loop
+```
+for (let item of menu.entries()) {
+  console.log(`${item[0] + 1}: ${item[1]}`);
+}
+
+Or using destructuring:
+
+for (const [i, el] of menu.entries()) {
+  console.log(`${i + 1}: ${el}`);
+}
+```
