@@ -1309,10 +1309,17 @@ for (const [i, el] of menu.entries()) {
 }
 ```
 
-#### Use the ptional chaining operator and the nullish coalescing operator with an array
+#### Use the optional chaining operator and the nullish coalescing operator with an array
 ```
 const users = [{ name: 'Jonas', email: 'hello@jonas.io' }];
 
 console.log(users[0]?.name ?? 'User array empty');
 console.log(users[1]?.name ?? 'User array empty');
+```
+
+#### Iterate throught the keys of an object
+```
+for (const day of Object.keys(openingHours)) {
+  console.log(day);
+}
 ```
