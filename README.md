@@ -1323,3 +1323,16 @@ for (const day of Object.keys(openingHours)) {
   console.log(day);
 }
 ```
+
+#### Create a set
+```
+const ordersSet = new Set([
+  'Soda',
+  'Soda',
+  'Burger',
+  'Soda',
+  'Fries',
+]);
+
+console.log(ordersSet);
+```
