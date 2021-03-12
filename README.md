@@ -1336,3 +1336,16 @@ const ordersSet = new Set([
 
 console.log(ordersSet);
 ```
+
+#### Get the number of elements from a set
+```
+const ordersSet = new Set([
+  'Soda',
+  'Soda',
+  'Burger',
+  'Soda',
+  'Fries',
+]);
+
+console.log(ordersSet.size);
+```
