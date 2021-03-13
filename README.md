@@ -1349,3 +1349,17 @@ const ordersSet = new Set([
 
 console.log(ordersSet.size);
 ```
+
+#### Determine if a set contains a specific element
+```
+const ordersSet = new Set([
+  'Soda',
+  'Soda',
+  'Burger',
+  'Soda',
+  'Fries',
+]);
+
+console.log(ordersSet.has('Soda'));
+console.log(ordersSet.has('Hotdog'));
+```
