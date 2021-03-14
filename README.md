@@ -1363,3 +1363,18 @@ const ordersSet = new Set([
 console.log(ordersSet.has('Soda'));
 console.log(ordersSet.has('Hotdog'));
 ```
+
+#### Add an element to a set
+```
+const ordersSet = new Set([
+  'Soda',
+  'Soda',
+  'Burger',
+  'Soda',
+  'Fries',
+]);
+
+ordersSet.add('Hotdog');
+ordersSet.add('Hotdog');
+console.log(ordersSet);
+```
