@@ -1378,3 +1378,17 @@ ordersSet.add('Hotdog');
 ordersSet.add('Hotdog');
 console.log(ordersSet);
 ```
+
+#### Delete an element from a set
+```
+const ordersSet = new Set([
+  'Soda',
+  'Soda',
+  'Burger',
+  'Soda',
+  'Fries',
+]);
+
+ordersSet.delete('Risotto');
+console.log(ordersSet);
+```
