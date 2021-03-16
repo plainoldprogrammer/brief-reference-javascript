@@ -1392,3 +1392,18 @@ const ordersSet = new Set([
 ordersSet.delete('Risotto');
 console.log(ordersSet);
 ```
+
+#### Delete all the values from a set
+```
+const ordersSet = new Set([
+  'Soda',
+  'Soda',
+  'Burger',
+  'Soda',
+  'Fries',
+]);
+
+console.log(ordersSet);
+ordersSet.clear();
+console.log(ordersSet);
+```
