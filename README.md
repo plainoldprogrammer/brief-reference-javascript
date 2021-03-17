@@ -1407,3 +1407,16 @@ console.log(ordersSet);
 ordersSet.clear();
 console.log(ordersSet);
 ```
+
+#### Loop through a set
+```
+const ordersSet = new Set([
+  'Soda',
+  'Soda',
+  'Burger',
+  'Soda',
+  'Fries',
+]);
+
+for (const order of ordersSet) console.log(order);
+```
