@@ -1420,3 +1420,10 @@ const ordersSet = new Set([
 
 for (const order of ordersSet) console.log(order);
 ```
+
+#### Create a set from an array
+```
+const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'];
+const staffUnique = new Set(staff);
+console.log(staffUnique);
+```
