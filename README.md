@@ -1441,3 +1441,8 @@ console.log(
   new Set(['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter']).size
 );
 ```
+
+#### Determine how many unique letters are in a string
+```
+console.log(new Set('jonasschmedtmann').size);
+```
