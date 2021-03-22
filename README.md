@@ -1446,3 +1446,10 @@ console.log(
 ```
 console.log(new Set('jonasschmedtmann').size);
 ```
+
+#### Create a map
+```
+const rest = new Map();
+rest.set('name', 'Classico Italiano');
+console.log(rest);
+```
