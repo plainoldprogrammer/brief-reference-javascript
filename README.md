@@ -1453,3 +1453,12 @@ const rest = new Map();
 rest.set('name', 'Classico Italiano');
 console.log(rest);
 ```
+
+#### Access to an individual element of a string
+```
+const plane = 'A320';
+
+console.log(plane[0]);
+console.log(plane[1]);
+console.log(plane[2])
+```
