@@ -1468,3 +1468,9 @@ console.log(plane[2])
 const airline = 'This is JavaScript';
 console.log(airline.length);
 ```
+
+#### Get the position of an element in a string
+```
+const language = 'The JavaScript Language';
+console.log(language.indexOf('r'));
+```
