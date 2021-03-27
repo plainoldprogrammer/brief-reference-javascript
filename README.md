@@ -1480,3 +1480,11 @@ console.log(language.indexOf('r'));
 const language = 'The JavaScript Language';
 console.log(language.lastIndexOf('r'));
 ```
+
+#### Get the position of a word in a string
+```
+const language = 'The JavaScript Language';
+console.log(language.indexOf('JavaScript'));
+
+NOTE:	indexOf is case sensitive.
+```
