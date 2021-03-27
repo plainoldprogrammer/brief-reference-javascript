@@ -1474,3 +1474,9 @@ console.log(airline.length);
 const language = 'The JavaScript Language';
 console.log(language.indexOf('r'));
 ```
+
+#### Get the last position of an element in a string
+```
+const language = 'The JavaScript Language';
+console.log(language.lastIndexOf('r'));
+```
