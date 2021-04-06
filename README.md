@@ -1465,8 +1465,8 @@ console.log(plane[2])
 
 #### Get the length of a string
 ```
-const airline = 'This is JavaScript';
-console.log(airline.length);
+const language = 'This is JavaScript';
+console.log(language.length);
 ```
 
 #### Get the position of an element in a string
@@ -1491,12 +1491,20 @@ NOTE:	indexOf is case sensitive.
 
 #### Get a substring from a string
 ```
-const airline = 'The JavaScript Language';
-console.log(airline.slice(4, 14));
+const language = 'The JavaScript Language';
+console.log(language.slice(4, 14));
 
 NOTE 1:	The index specified as first parameter of slice is inclusive.
 	and
 	The index specified as second parameter of slice is exclusive.
 
 NOTE 2:	The length of the substring is equal to the second parameter - first parameter.
+```
+
+#### Get the First and the Last Word in a String
+```
+const language = 'The JavaScript Language';
+
+console.log(language.slice(0, language.indexOf(' ')));
+console.log(language.slice(language.lastIndexOf(' ') + 1, language.length));
 ```
