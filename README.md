@@ -1501,10 +1501,16 @@ NOTE 1:	The index specified as first parameter of slice is inclusive.
 NOTE 2:	The length of the substring is equal to the second parameter - first parameter.
 ```
 
-#### Get the First and the Last Word in a String
+#### Get the first and the last word in a string
 ```
 const language = 'The JavaScript Language';
 
 console.log(language.slice(0, language.indexOf(' ')));
 console.log(language.slice(language.lastIndexOf(' ') + 1, language.length));
+```
+
+#### Get a substring from a string and start counting from the end
+```
+const language = 'The JavaScript Language';
+console.log(language.slice(-2));
 ```
