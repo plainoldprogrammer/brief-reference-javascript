@@ -1514,3 +1514,10 @@ console.log(language.slice(language.lastIndexOf(' ') + 1, language.length));
 const language = 'The JavaScript Language';
 console.log(language.slice(-2));
 ```
+
+#### Get the first and the last word in a string
+```
+const language = 'The JavaScript Language';
+console.log(language.slice(0, language.indexOf(' ')));
+console.log(language.slice(language.lastIndexOf(' ') + 1, language.length));
+```
