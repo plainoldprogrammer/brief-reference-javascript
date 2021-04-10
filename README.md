@@ -1514,16 +1514,19 @@ console.log(language.slice(language.lastIndexOf(' ') + 1, language.length));
 const language = 'The JavaScript Language';
 console.log(language.slice(-2));
 ```
+#### Difference between a normal function and an arrow function
+```
+const obj = {
+  normalFunction: function () {
+    console.log("normal function", this);
+  },
+  arrowFunction: () => {
+    console.log("arrow function", this);
+  },
+};
 
-#### Get the first and the last word in a string
-```
-const language = 'The JavaScript Language';
-console.log(language.slice(0, language.indexOf(' ')));
-console.log(language.slice(language.lastIndexOf(' ') + 1, language.length));
-```
+console.log("this del ambiente", this);
+obj.normalFunction(); // Depends of the object which calls the function.
+obj.arrowFunction(); // Depends of the enviroments in which the function was defined.
 
-#### Get a substring from a string and start counting from the end
-```
-const language = 'The JavaScript Language';
-console.log(language.slice(-8));
 ```
