@@ -1528,5 +1528,16 @@ const obj = {
 console.log("this del ambiente", this);
 obj.normalFunction(); // Depends of the object which calls the function.
 obj.arrowFunction(); // Depends of the enviroments in which the function was defined.
+```
 
+#### Multiline string using template literal syntax
+```
+let firstName = 'Pele';
+let country = 'Brazil';
+let sum = (a, b) => a + b;
+
+const message = `My name is ${firstName},
+and I'm from ${country}.
+My total number of goals is ${sum(640, 639)}
+Good luck!`;
 ```
