@@ -1541,3 +1541,9 @@ and I'm from ${country}.
 My total number of goals is ${sum(640, 639)}
 Good luck!`;
 ```
+
+#### Replace the first occurrence in a string
+```
+const announcement = "This is the first pc in the pc world";
+console.log(announcement.replace("pc", "computer"));
+```
