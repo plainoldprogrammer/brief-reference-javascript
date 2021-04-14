@@ -1547,3 +1547,9 @@ Good luck!`;
 const announcement = "This is the first pc in the pc world";
 console.log(announcement.replace("pc", "computer"));
 ```
+
+#### Replace all the occurrences in a string
+```
+const announcement = "This is the first pc in the pc world";
+console.log(announcement.replaceAll("pc", "computer"));
+```
