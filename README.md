@@ -1553,3 +1553,9 @@ console.log(announcement.replace("pc", "computer"));
 const announcement = "This is the first pc in the pc world";
 console.log(announcement.replaceAll("pc", "computer"));
 ```
+
+#### Check if a string includes a subtring
+```
+const plane = "Visual Studio Code";
+console.log(plane.includes("Code"));
+```
