@@ -1559,3 +1559,8 @@ console.log(announcement.replaceAll("pc", "computer"));
 const plane = "Visual Studio Code";
 console.log(plane.includes("Code"));
 ```
+
+#### Destructure an array (from a string)
+```
+const [firstName, lastName] = "John Doe".split(" ");
+```
