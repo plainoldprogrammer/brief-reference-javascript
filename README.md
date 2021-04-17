@@ -1564,3 +1564,10 @@ console.log(plane.includes("Code"));
 ```
 const [firstName, lastName] = "John Doe".split(" ");
 ```
+
+#### Join an array
+```
+const [firstName, lastName] = "John Doe".split(" ");
+const newName = ["Mr.", firstName, lastName.toUpperCase()].join(" ");
+console.log(newName);
+```
