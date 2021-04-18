@@ -1571,3 +1571,10 @@ const [firstName, lastName] = "John Doe".split(" ");
 const newName = ["Mr.", firstName, lastName.toUpperCase()].join(" ");
 console.log(newName);
 ```
+
+#### Fill a string with a specific character
+```
+const sayHello = "Hello";
+console.log(sayHello.padEnd(7, "-"));
+console.log(sayHello.padStart(7, "-"));
+```
