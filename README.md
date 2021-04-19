@@ -1578,3 +1578,12 @@ const sayHello = "Hello";
 console.log(sayHello.padEnd(7, "-"));
 console.log(sayHello.padStart(7, "-"));
 ```
+
+#### Mask a number like a credit card
+```
+const maskCreditCard = function (number) {
+  const str = number + "";
+  const last = str.slice(-4);
+  return last.padStart(str.length, "*");
+};
+```
