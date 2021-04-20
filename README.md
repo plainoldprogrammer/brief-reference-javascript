@@ -1587,3 +1587,9 @@ const maskCreditCard = function (number) {
   return last.padStart(str.length, "*");
 };
 ```
+
+#### Repeat a message 5 times
+```
+const message = "Your computer will restart right now\n";
+console.log(message.repeat(5));
+```
