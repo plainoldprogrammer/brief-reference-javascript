@@ -1593,3 +1593,15 @@ const maskCreditCard = function (number) {
 const message = "Your computer will restart right now\n";
 console.log(message.repeat(5));
 ```
+
+#### Enhanced object literal
+```
+const createPerson = function (firstName, lastName) {
+  const person = {
+    firstName, // instead of firstName: firstName
+    lastName, // instead of lastName: lastName
+  };
+
+  return person;
+};
+```
