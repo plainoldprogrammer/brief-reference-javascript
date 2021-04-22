@@ -1605,3 +1605,14 @@ const createPerson = function (firstName, lastName) {
   return person;
 };
 ```
+
+#### Immediately invoked function expression
+```
+// IIFE using function declaration
+(function () {
+  console.log('This will never run again');
+})();
+
+// IIFE using arrow function
+(() => console.log('This will never run again'))();
+```
