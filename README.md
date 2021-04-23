@@ -1616,3 +1616,22 @@ const createPerson = function (firstName, lastName) {
 // IIFE using arrow function
 (() => console.log('This will never run again'))();
 ```
+
+#### Closure
+```
+const secureBooking = function () {
+  let passengerCount = 0;
+
+  return function () {
+    passengerCount++;
+    console.log(`${passengerCount} passengers`);
+  };
+};
+
+const booker = secureBooking();
+console.log(booker);
+
+booker();
+booker();
+booker();
+```
