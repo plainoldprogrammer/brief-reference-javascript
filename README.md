@@ -1635,3 +1635,15 @@ booker();
 booker();
 booker();
 ```
+
+#### Create a shallow copy of an array
+```
+let arr = ['a', 'b', 'c', 'd', 'e'];
+
+// Method 1:
+// This let's chain methods
+console.log(arr.slice());
+
+// Method 2:
+console.log([...arr]);
+```
