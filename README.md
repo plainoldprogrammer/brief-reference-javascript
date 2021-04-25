@@ -1647,3 +1647,11 @@ console.log(arr.slice());
 // Method 2:
 console.log([...arr]);
 ```
+
+#### Reverse an array
+```
+const arr = ['j', 'i', 'h', 'g', 'f'];
+console.log(arr.reverse());
+
+NOTE:	reverse method mutates the original array.
+```
