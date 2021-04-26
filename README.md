@@ -1655,3 +1655,17 @@ console.log(arr.reverse());
 
 NOTE:	reverse method mutates the original array.
 ```
+
+#### Concatenate two arrays
+```
+arr = ['a', 'b', 'c', 'd', 'e'];
+const arr2 = ['f', 'g', 'h', 'i', 'i'];
+
+// Using the concat method
+console.log(arr.concat(arr2));
+
+// Using the spread operator
+console.log([...arr, ...arr2]);
+
+NOTE:	Both methods doesn't mutate the original arrays.
+```
