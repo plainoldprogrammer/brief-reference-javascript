@@ -1669,3 +1669,10 @@ console.log([...arr, ...arr2]);
 
 NOTE:	Both methods doesn't mutate the original arrays.
 ```
+
+#### Retrieve a json file using the fetch api
+```
+fetch("DatasetMeta.json")
+  .then((response) => response.json())
+  .then((json) => console.log(json));
+```
