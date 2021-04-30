@@ -1680,5 +1680,15 @@ fetch("DatasetMeta.json")
 #### Access to an array using the for of loop
 ```
 const years = [1980, 1990, 2000, 2010, 2020];
+
 for (const year of years) console.log(`Year ${year}`);
+```
+
+#### Access to an array using the for of loop and the forEach method
+```
+const years = [1980, 1990, 2000, 2010, 2020];
+
+years.forEach(function(year, index, array) {
+  console.log(`Year ${year}`);
+});
 ```
