@@ -1692,3 +1692,16 @@ years.forEach(function(year, index, array) {
   console.log(`Year ${year}`);
 });
 ```
+
+#### Access to a map using the forEach method
+```
+const companies = new Map([
+  ['MSFT', 'Microsoft'],
+  ['AAPL', 'Apple'],
+  ['AMZN', 'Amazon'],
+]);
+
+companies.forEach(function(value, key, map) {
+  console.log(`${key}: ${value}`);
+});
+```
