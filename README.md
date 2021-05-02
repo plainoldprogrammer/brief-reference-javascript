@@ -1705,3 +1705,13 @@ companies.forEach(function(value, key, map) {
   console.log(`${key}: ${value}`);
 });
 ```
+
+#### Access to a set using the forEach method
+```
+const companies = new Set(['MSFT', 'AAPL', 'MSFT', 'AMZN', 'AMZN']);
+
+companies.forEach(function(value, key, map) {
+  // Note: In a Set the key and the value is the same.
+  console.log(`${key}: ${value}`);
+});
+```
