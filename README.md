@@ -1715,3 +1715,14 @@ companies.forEach(function(value, key, map) {
   console.log(`${key}: ${value}`);
 });
 ```
+
+#### Add an element to the inside of another element at the beginning
+```
+const html = `
+  <div>
+    A new element
+  </div>
+`;
+
+containerMovements.insertAdjacentHTML('afterbegin', html);
+```
