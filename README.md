@@ -1726,3 +1726,20 @@ const html = `
 
 containerMovements.insertAdjacentHTML('afterbegin', html);
 ```
+
+#### Map method to access to an array elements
+```
+const purchases = [10, 15, 20];
+const tax = .0825;
+
+// Using map with a function
+const purchasesAfterTax = purchases.map(function (mov) {
+  return mov * (1 + tax);
+});
+console.log(purchases);
+console.log(purchasesAfterTax);
+
+// Using map with an arrow function
+const purchasesAfterTaxArrow = purchases.map(mov => mov * (1 + tax));
+console.log(purchasesAfterTaxArrow);
+```
