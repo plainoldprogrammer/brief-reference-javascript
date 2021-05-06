@@ -1744,7 +1744,7 @@ const purchasesAfterTaxArrow = purchases.map(mov => mov * (1 + tax));
 console.log(purchasesAfterTaxArrow);
 ```
 
-#### Filter Method to Get the Positive and the Negative Values in an Array
+#### Filter method to get the positive and the negative values in an array
 ```
 const purchases = [10, 15, 20, -300, 8, -16];
 
@@ -1759,4 +1759,19 @@ console.log(debit);
 const credit = purchases.filter(mov => mov < 0);
 console.log(purchases);
 console.log(credit);
+```
+
+#### Reduce method to sum all the values in an array
+```
+const purchases = [10, 15, 20, -300, 8, -16];
+
+// Reduce method using an annonymous function
+const balance = purchases.reduce(function (acc, curr) {
+  return acc + curr;
+}, 0);
+console.log(balance);
+
+// Reduce method using arrow function
+const balance = purchases.reduce((acc, curr) => acc + curr, 0);
+console.log(balance);
 ```
