@@ -1743,3 +1743,20 @@ console.log(purchasesAfterTax);
 const purchasesAfterTaxArrow = purchases.map(mov => mov * (1 + tax));
 console.log(purchasesAfterTaxArrow);
 ```
+
+#### Filter Method to Get the Positive and the Negative Values in an Array
+```
+const purchases = [10, 15, 20, -300, 8, -16];
+
+// Using an annonymous function.
+const debit = purchases.filter(function (mov, i, arr) {
+  return mov > 0;
+});
+console.log(purchases);
+console.log(debit);
+
+// Using an arrow function
+const credit = purchases.filter(mov => mov < 0);
+console.log(purchases);
+console.log(credit);
+```
