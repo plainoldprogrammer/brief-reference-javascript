@@ -1775,3 +1775,15 @@ console.log(balance);
 const balance = purchases.reduce((acc, curr) => acc + curr, 0);
 console.log(balance);
 ```
+
+#### Reduce method to return the maximum number in an array
+```
+const purchases = [10, 15, 20, -300, 8, -16];
+
+const maximumValue = purchases.reduce(function (acc, val) {
+  return val > acc ? val : acc;
+}, purchases[0]);
+console.log(maximumValue);
+
+NOTE: The initial value of the accumulator should be the first value in the array and not 0.
+```
