@@ -1787,3 +1787,10 @@ console.log(maximumValue);
 
 NOTE: The initial value of the accumulator should be the first value in the array and not 0.
 ```
+
+#### Reduce method to calculate the average of an array of integers
+```
+const data = [100, 200, 300];
+const average = data.reduce((acc, age) => acc + age, 0) / data.length;
+console.log(average);
+```
