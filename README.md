@@ -1794,3 +1794,16 @@ const data = [100, 200, 300];
 const average = data.reduce((acc, age) => acc + age, 0) / data.length;
 console.log(average);
 ```
+
+#### Use map, filter and reduce methods together
+```
+const tax = 0.0825;
+const movements = [10, 15, 20, -300, 8, -16];
+
+// PIPELINE
+const movementsAfterTax = movements
+  .filter(mov => mov > 0)
+  .map(mov => mov * tax)
+  .reduce((acc, mov) => acc + mov, 0);
+console.log(movementsAfterTax);
+```
