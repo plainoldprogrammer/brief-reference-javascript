@@ -1807,3 +1807,18 @@ const movementsAfterTax = movements
   .reduce((acc, mov) => acc + mov, 0);
 console.log(movementsAfterTax);
 ```
+
+#### Debug a chain call of map, filter and reduce
+```
+const tax = 0.0825;
+const movements = [10, 15, 20, -300, 8, -16];
+
+const totalDepositsUSD = movements
+  .filter(mov => mov < 0)
+  .map((mov, i, arr) => {
+    console.log(arr);	// Results of filter operation
+    return mov * tax;
+  })
+  .reduce((acc, mov) => acc + mov, 0);
+  ```
+  
