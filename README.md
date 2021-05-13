@@ -1829,3 +1829,13 @@ const firstWithdrawal = movements.find(mov => mov < 0);
 console.log(movements);
 console.log(firstWithdrawal);
 ```
+
+#### Prevent a form from submitting a form
+```
+btnLogin.addEventListener('click', function (e) {
+  e.preventDefault();
+  console.log('LOGIN');
+});
+
+// NOTE: "btnLogin" refers to an element inside a form.
+```
