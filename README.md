@@ -1822,3 +1822,10 @@ const totalDepositsUSD = movements
   .reduce((acc, mov) => acc + mov, 0);
   ```
   
+#### Find method to get the first occurence of an element
+```
+const movements = [10, 15, 20, -300, 8, -16];
+const firstWithdrawal = movements.find(mov => mov < 0);
+console.log(movements);
+console.log(firstWithdrawal);
+```
