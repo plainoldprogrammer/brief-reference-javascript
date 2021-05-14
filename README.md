@@ -1839,3 +1839,10 @@ btnLogin.addEventListener('click', function (e) {
 
 // NOTE: "btnLogin" refers to an element inside a form.
 ```
+
+#### Make an input to lose the focus
+```
+btnLogin.addEventListener('click', function (e) {
+  inputLoginPin.blur();
+});
+```
