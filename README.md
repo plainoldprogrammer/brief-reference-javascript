@@ -1846,3 +1846,12 @@ btnLogin.addEventListener('click', function (e) {
   inputLoginPin.blur();
 });
 ```
+
+#### Check for equality or for a condition
+```
+const movements = [10, 15, 20, -300, 8, -16];
+console.log(movements);
+
+// Checks only for equality
+console.log(movements.includes(-300));
+```
