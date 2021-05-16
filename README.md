@@ -1855,3 +1855,16 @@ console.log(movements);
 // Checks only for equality
 console.log(movements.includes(-300));
 ```
+
+#### Flattern an array
+```
+const arr = [[1, 2, 3], [4, 5, 6], 7, 8];
+console.log(arr);
+console.log(arr.flat());
+console.log('');
+
+// Going two levels deeper using an argument
+const arrDeep = [[[1, 2], 3], [4, [5, 6]], 7, 8];
+console.log(arrDeep.flat(2));
+console.log('');
+```
