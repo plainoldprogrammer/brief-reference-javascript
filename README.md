@@ -1868,3 +1868,11 @@ const arrDeep = [[[1, 2], 3], [4, [5, 6]], 7, 8];
 console.log(arrDeep.flat(2));
 console.log('');
 ```
+
+#### Sort an array of strings
+```
+const owners = ['John', 'Zoe', 'Ariel', 'Maury'];
+console.log(owners);
+console.log(owners.sort()); // This mutates the original array
+console.log(owners);
+```
