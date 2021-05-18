@@ -1876,3 +1876,9 @@ console.log(owners);
 console.log(owners.sort()); // This mutates the original array
 console.log(owners);
 ```
+
+#### Create a new array with 7 empty elements
+```
+const x = new Array(7);
+console.log(x);
+```
