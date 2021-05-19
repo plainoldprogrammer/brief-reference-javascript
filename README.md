@@ -1882,3 +1882,12 @@ console.log(owners);
 const x = new Array(7);
 console.log(x);
 ```
+
+#### Create an array with dynamic values
+```
+const z = Array.from({ length: 7 }, (_, i) => i + 1);
+console.log(z);
+
+NOTE 1:	The first parameter of "Array.from" is an object with the length of the new array.
+NOTE 2: The second parameter of "Array.from" is a call back function that returns the value of the new current element.
+```
