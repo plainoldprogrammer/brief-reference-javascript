@@ -1891,3 +1891,11 @@ console.log(z);
 NOTE 1:	The first parameter of "Array.from" is an object with the length of the new array.
 NOTE 2: The second parameter of "Array.from" is a call back function that returns the value of the new current element.
 ```
+
+#### Type coersion of a string to a number
+```
+Instead of:	Number('3');
+Can be:		+'3';
+
+NOTE: The + at the beginning does type coersion.
+```
