@@ -1899,3 +1899,14 @@ Can be:		+'3';
 
 NOTE: The + at the beginning does type coersion.
 ```
+
+#### Parse a string to a number
+```
+// Integer
+console.log(Number.parseInt('2.5rem'));
+
+// Float
+console.log(Number.parseFloat('2.5rem'));
+
+NOTE: The string must start with a number.
+```
