@@ -1937,3 +1937,12 @@ console.log(Math.max(5, 18, '23px', 11, 2));
 ```
 console.log(Math.min(5, 18, 23, 11, 2));
 ```
+
+#### Generate a random number between a min and max
+```
+const randomInt = (min, max) => Math.floor(Math.random() * (max - min) + 1) + min;
+console.log(randomInt(3, 8));
+
+NOTE 1:	"floor" is used to work fine with decimal numbers.
+NOTE 2:	"floor" round any number down.
+```
