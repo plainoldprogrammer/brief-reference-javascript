@@ -1946,3 +1946,10 @@ console.log(randomInt(3, 8));
 NOTE 1:	"floor" is used to work fine with decimal numbers.
 NOTE 2:	"floor" round any number down.
 ```
+
+#### Round a decimal number
+```
+console.log((2.76).toFixed(1));
+
+NOTE: "toFixed" returns a string.
+```
