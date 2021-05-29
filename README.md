@@ -1953,3 +1953,19 @@ console.log((2.76).toFixed(1));
 
 NOTE: "toFixed" returns a string.
 ```
+
+
+#### Represent a very big number
+```
+// Incorrect:
+console.log(4838430248342043823408394849483209);
+
+// Correct:
+console.log(4838430248342043823408394849483209n);
+
+// Correct with small integer numbers:
+console.log(BigInt(48384302483));
+
+NOTE 1: Add the 'n' at the end of the number to indicate that is a bigInt.
+NOTE 2: The "BigInt" construction function works fine only with small integer numbers.
+```
