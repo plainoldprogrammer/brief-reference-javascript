@@ -1969,3 +1969,17 @@ console.log(BigInt(48384302483));
 NOTE 1: Add the 'n' at the end of the number to indicate that is a bigInt.
 NOTE 2: The "BigInt" construction function works fine only with small integer numbers.
 ```
+
+#### Create a new date
+```
+// Using a constructor
+new Date();
+
+// Using a string
+new Date('Apr 20 2021 23:46:51')
+new Date('December 24, 2015')
+
+// Using specific values
+new Date(2037, 10, 19, 15, 23, 5);
+new Date(2037, 10, 31);
+```
