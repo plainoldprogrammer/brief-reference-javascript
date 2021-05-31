@@ -1983,3 +1983,24 @@ new Date('December 24, 2015')
 new Date(2037, 10, 19, 15, 23, 5);
 new Date(2037, 10, 31);
 ```
+
+#### Getters and setters of a date
+```
+const future = new Date(2037, 10, 19, 15, 23);
+console.log(future);
+
+// Getters
+console.log(future.getFullYear());
+console.log(future.getMonth());
+console.log(future.getDate());
+console.log(future.getDay());
+console.log(future.getHours());
+console.log(future.getMinutes());
+console.log(future.getSeconds());
+console.log(future.toISOString());
+console.log(future.getTime());
+
+// Setters
+future.setFullYear(2040);
+console.log(future);
+```
