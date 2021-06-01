@@ -2004,3 +2004,8 @@ console.log(future.getTime());
 future.setFullYear(2040);
 console.log(future);
 ```
+
+#### Get the number of milliseconds since unix epoch
+```
+console.log(Date.now());
+```
