@@ -2021,8 +2021,17 @@ console.log(total);
 
 #### Create an array using values from another array
 ```
-const numeros = [2, 3];
-const masNumeros = [1, ...numeros, 4, 5];
+const numbers = [2, 3];
+const moreNumbers = [1, ...numbers, 4, 5];
 
-console.log(masNumeros);
+console.log(moreNumbers);
+```
+
+#### Create an array from two arrays
+```
+const numbers = [2, 3];
+const moreNumbers = [4, 5];
+const concatenate = [...numbers, ...moreNumbers];
+
+console.log(concatenate);
 ```
