@@ -2009,3 +2009,12 @@ console.log(future);
 ```
 console.log(Date.now());
 ```
+
+#### Pass an array to a function that receives integers
+```
+const sum = (a, b) => a + b;
+const numbers = [2, 3];
+const total = sum(...numbers);
+
+console.log(total);
+```
