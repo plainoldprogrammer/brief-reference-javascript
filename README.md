@@ -2018,3 +2018,11 @@ const total = sum(...numbers);
 
 console.log(total);
 ```
+
+#### Create an array using values from another array
+```
+const numeros = [2, 3];
+const masNumeros = [1, ...numeros, 4, 5];
+
+console.log(masNumeros);
+```
