@@ -2035,3 +2035,14 @@ const concatenate = [...numbers, ...moreNumbers];
 
 console.log(concatenate);
 ```
+
+#### Put the first element of an array in a variable and the rest in another array
+```
+const numbers = [2, 3];
+const moreNumbers = [1, ...numbers, 4, 5];
+const [firstNumber, ...otherNumbers] = moreNumbers;
+
+console.log("moreNumbers: " + moreNumbers);
+console.log("firstNumber: " + firstNumber);
+console.log("otherNumbers: " + otherNumbers);
+```
