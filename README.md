@@ -2046,3 +2046,11 @@ console.log("moreNumbers: " + moreNumbers);
 console.log("firstNumber: " + firstNumber);
 console.log("otherNumbers: " + otherNumbers);
 ```
+
+#### Clone an array using the spread operator
+```
+const nums = [1, 2, 3, 4, 5];
+const numsClon = [...nums];
+
+console.log(numsClon);
+```
