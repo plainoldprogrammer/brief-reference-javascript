@@ -2054,3 +2054,19 @@ const numsClon = [...nums];
 
 console.log(numsClon);
 ```
+
+#### Clone an object and add a property to it using the spread operator
+```
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+};
+
+const person2 = {
+  ...person,
+  edad: 999,
+};
+
+console.log(person);
+console.log(person2);
+```
