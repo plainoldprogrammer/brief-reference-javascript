@@ -2071,7 +2071,7 @@ console.log(person);
 console.log(person2);
 ```
 
-#### Clone an bbject using the spread operator and modify a property
+#### Clone an object using the spread operator and modify a property
 ```
 const person = {
   firstName: "John",
@@ -2082,4 +2082,19 @@ const otherPerson = { ...person };
 otherPerson.firstName = "Jane";
 
 console.log(otherPerson);
+```
+
+#### Destructure an object and put the rest on another object
+```
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 99
+};
+
+const { age, ...restPerson } = person;
+
+console.log('person: ', person);
+console.log('age: ', age);
+console.log('restPerson: ', restPerson);
 ```
