@@ -2070,3 +2070,16 @@ const person2 = {
 console.log(person);
 console.log(person2);
 ```
+
+#### Clone an bbject using the spread operator and modify a property
+```
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+};
+
+const otherPerson = { ...person };
+otherPerson.firstName = "Jane";
+
+console.log(otherPerson);
+```
