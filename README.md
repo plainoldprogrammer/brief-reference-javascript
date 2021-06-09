@@ -2098,3 +2098,17 @@ console.log('person: ', person);
 console.log('age: ', age);
 console.log('restPerson: ', restPerson);
 ```
+
+#### Define a class
+```
+class Rentangle {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+
+  area() {
+    console.log(`The area of a rectangle is: ${this.height * this.width}`);
+  }
+}
+```
