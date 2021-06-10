@@ -2112,3 +2112,20 @@ class Rentangle {
   }
 }
 ```
+
+#### Instantiate an object from a class
+```
+class Rentangle {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+
+  area() {
+    console.log(`The area of a rectangle is: ${this.height * this.width}`);
+  }
+}
+
+const rectangle = new Rentangle(2, 3);
+rectangle.area();
+```
