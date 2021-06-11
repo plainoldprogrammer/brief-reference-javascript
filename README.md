@@ -2129,3 +2129,9 @@ class Rentangle {
 const rectangle = new Rentangle(2, 3);
 rectangle.area();
 ```
+
+#### Print the timestamp of a date
+```
+const future = new Date(2037, 10, 19, 15, 23);
+console.log(+future);
+```
