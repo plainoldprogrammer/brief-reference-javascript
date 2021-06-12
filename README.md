@@ -2135,3 +2135,9 @@ rectangle.area();
 const future = new Date(2037, 10, 19, 15, 23);
 console.log(+future);
 ```
+
+#### Create a date format based in the US
+```
+const now = new Date();
+labelDate.textContent = new Intl.DateTimeFormat('en-US').format(now);
+```
