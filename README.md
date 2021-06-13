@@ -2141,3 +2141,18 @@ console.log(+future);
 const now = new Date();
 labelDate.textContent = new Intl.DateTimeFormat('en-US').format(now);
 ```
+
+#### Create a date format based in the US with specific options
+```
+const now = new Date();
+const options = {
+  hour: 'numeric',
+  minute: 'numeric',
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+  weekday: 'long',
+};
+
+labelDate.textContent = new Intl.DateTimeFormat('en-US', options).format(now);
+```
