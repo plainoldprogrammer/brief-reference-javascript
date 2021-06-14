@@ -2156,3 +2156,20 @@ const options = {
 
 labelDate.textContent = new Intl.DateTimeFormat('en-US', options).format(now);
 ```
+
+#### Create a date format based on your browser
+```
+const now = new Date();
+const options = {
+  hour: 'numeric',
+  minute: 'numeric',
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+  weekday: 'long',
+};
+const locale = navigator.language;
+console.log(locale);
+
+labelDate.textContent = new Intl.DateTimeFormat(locale, options).format(now);
+```
