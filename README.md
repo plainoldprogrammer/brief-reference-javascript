@@ -2173,3 +2173,9 @@ console.log(locale);
 
 labelDate.textContent = new Intl.DateTimeFormat(locale, options).format(now);
 ```
+
+#### Create a formatter for US number
+```
+const num = 3884764.23;
+console.log('US: ', new Intl.NumberFormat('en-US').format(num));
+```
