@@ -2225,3 +2225,8 @@ setInterval(function () {
   console.log(now);
 }, 1000);
 ```
+
+#### Select the entire document
+```
+console.log(document.documentElement);
+```
