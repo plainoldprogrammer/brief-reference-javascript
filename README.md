@@ -2217,3 +2217,11 @@ console.log(
 
 NOTE: The currency must be specified as option because is not determined by the locale.
 ```
+
+#### Print the date every second
+```
+setInterval(function () {
+  const now = new Date();
+  console.log(now);
+}, 1000);
+```
