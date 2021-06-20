@@ -2230,3 +2230,16 @@ setInterval(function () {
 ```
 console.log(document.documentElement);
 ```
+
+#### Get and set inline styles
+```
+const message = document.createElement('div');
+message.style.width = '120%';
+message.style.backgroundColor = '#37383d';
+
+// Doesn't get anything because height is not a property in inline style.
+console.log(message.style.height);
+
+// Get the background because is a property in inile style.
+console.log(message.style.backgroundColor);
+```
