@@ -2243,3 +2243,15 @@ console.log(message.style.height);
 // Get the background because is a property in inile style.
 console.log(message.style.backgroundColor);
 ```
+
+#### Get all the styles from an element
+```
+const message = document.createElement('div');
+message.style.width = '120%';
+message.style.backgroundColor = '#37383d';
+
+// Get all the styles of the element (including the inline)
+console.log(getComputedStyle(message));
+
+NOTE:	This get the computed styles of the element.
+```
