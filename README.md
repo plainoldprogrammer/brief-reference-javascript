@@ -2255,3 +2255,12 @@ console.log(getComputedStyle(message));
 
 NOTE:	This get the computed styles of the element.
 ```
+
+#### Get a specific property from computed styles in an element
+```
+const message = document.createElement('div');
+message.style.width = '120%';
+message.style.backgroundColor = '#37383d';
+
+console.log(getComputedStyle(message).backgroundColor);
+```
