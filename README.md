@@ -2264,3 +2264,13 @@ message.style.backgroundColor = '#37383d';
 
 console.log(getComputedStyle(message).backgroundColor);
 ```
+
+#### Increase the height of a div by getting their computed style
+```
+const message = document.createElement('div');
+message.style.width = '120%';
+message.style.backgroundColor = '#37383d';
+
+message.style.height =
+  Number.parseFloat(getComputedStyle(message).height, 10) + 30 + 'px';
+```
