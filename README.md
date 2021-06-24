@@ -2274,3 +2274,16 @@ message.style.backgroundColor = '#37383d';
 message.style.height =
   Number.parseFloat(getComputedStyle(message).height, 10) + 30 + 'px';
 ```
+
+
+#### Change a custom property value
+```
+// In the CSS
+:root {
+  --color-primary: #5ec576;
+}
+// In JavaScript
+document.documentElement.style.setProperty('--color-primary', 'orangered');
+
+NOTE:	"setProperty" works with custom properties and also with properties.
+```
