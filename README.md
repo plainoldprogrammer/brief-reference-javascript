@@ -2275,7 +2275,6 @@ message.style.height =
   Number.parseFloat(getComputedStyle(message).height, 10) + 30 + 'px';
 ```
 
-
 #### Change a custom property value
 ```
 // In the CSS
