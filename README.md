@@ -2286,3 +2286,18 @@ document.documentElement.style.setProperty('--color-primary', 'orangered');
 
 NOTE:	"setProperty" works with custom properties and also with properties.
 ```
+
+#### Get the class name from an element
+```
+// In the HTML file:
+<img
+  src="img/logo.png"
+  alt="Bankist logo"
+  class="nav__logo"
+  id="logo"
+/>
+
+// In JavaScript:
+const logo = document.querySelector('.nav__logo');
+console.log(logo.className);
+```
