@@ -2316,3 +2316,27 @@ console.log(logo.className);
 const logo = document.querySelector('.nav__logo');
 logo.alt = 'Beautiful minimalist logo';
 ```
+
+#### Get the value of a custom attribute
+```
+// In the HTML file:
+<img
+  src="img/logo.png"
+  alt="Bankist logo"
+  class="nav__logo"
+  id="logo"
+  designer="Jonas"
+/>
+
+// In JavaScript:
+
+// This way does't work
+const logo = document.querySelector('.nav__logo');
+console.log(logo.designer);
+
+// This way it works
+const logo = document.querySelector('.nav__logo');
+console.log(logo.getAttribute('designer'));
+
+NOTE:	The custom attributes are ignored for html if they are ignored because they are not standard.
+```
