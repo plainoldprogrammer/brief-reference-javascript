@@ -2301,3 +2301,18 @@ NOTE:	"setProperty" works with custom properties and also with properties.
 const logo = document.querySelector('.nav__logo');
 console.log(logo.className);
 ```
+
+#### Change the value of an attribute
+```
+// In the HTML file:
+<img
+  src="img/logo.png"
+  alt="Bankist logo"
+  class="nav__logo"
+  id="logo"
+/>
+
+// In JavaScript:
+const logo = document.querySelector('.nav__logo');
+logo.alt = 'Beautiful minimalist logo';
+```
