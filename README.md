@@ -2340,3 +2340,19 @@ console.log(logo.getAttribute('designer'));
 
 NOTE:	The custom attributes are ignored for html if they are ignored because they are not standard.
 ```
+
+#### Set an attribute and their value
+```
+// In the HTML file:
+<img
+  src="img/logo.png"
+  alt="Bankist logo"
+  class="nav__logo"
+  id="logo"
+  designer="Jonas"
+/>
+
+// In JavaScript:
+const logo = document.querySelector('.nav__logo');
+logo.setAttribute('company', 'Bankist');
+```
