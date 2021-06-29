@@ -2356,3 +2356,25 @@ NOTE:	The custom attributes are ignored for html if they are ignored because the
 const logo = document.querySelector('.nav__logo');
 logo.setAttribute('company', 'Bankist');
 ```
+
+#### Get the absolute and the relative url of an image
+```
+// In the HTML file:
+<img
+  src="img/logo.png"
+  alt="Bankist logo"
+  class="nav__logo"
+  id="logo"
+  designer="Jonas"
+/>
+
+// In JavaScript:
+
+// Absolute URL:
+const logo = document.querySelector('.nav__logo');
+console.log(logo.src);
+
+// Relative URL:
+const logo = document.querySelector('.nav__logo');
+console.log(logo.getAttribute('src'));
+```
