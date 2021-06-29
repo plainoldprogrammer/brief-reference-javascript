@@ -2378,3 +2378,19 @@ console.log(logo.src);
 const logo = document.querySelector('.nav__logo');
 console.log(logo.getAttribute('src'));
 ```
+
+#### Get the absolute and the relative url of a link
+```
+// In the HTML:
+<a class="nav__link nav__link--btn btn--show-modal" href="#"> Open account </a>
+
+// In JavaScript:
+
+// Absolute URL:
+const link = document.querySelector('.nav__link--btn');
+console.log(link.href);
+
+// Relelative URL (as written in the HTML):
+const link = document.querySelector('.nav__link--btn');
+console.log(link.getAttribute('href'));
+```
