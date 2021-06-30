@@ -2394,3 +2394,31 @@ console.log(link.href);
 const link = document.querySelector('.nav__link--btn');
 console.log(link.getAttribute('href'));
 ```
+
+#### Access to data attributes
+```
+// In the HTML:
+<img
+   src="img/logo.png"
+  alt="Bankist logo"
+  class="nav__logo"
+  id="logo"
+  designer="Jonas"
+  data-version-number="3.0"
+/>
+
+// JavaScript:
+const logo = document.querySelector('.nav__logo');
+console.log(logo.dataset.versionNumber);
+
+
+NOTE 1:	This data attributes start with "data" word in the HTML.
+
+NOTE 2:	In HTML the data attributes are written using dashes.
+
+NOTE 3:	In JavaScript are written using camel case.
+
+NOTE 4:	The data attributes are always stored in the dataset object.
+
+NOTE 5:	Data attributes are used to store data in the UI (in the HTML).
+```
