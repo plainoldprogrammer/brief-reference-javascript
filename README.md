@@ -2411,7 +2411,6 @@ console.log(link.getAttribute('href'));
 const logo = document.querySelector('.nav__logo');
 console.log(logo.dataset.versionNumber);
 
-
 NOTE 1:	This data attributes start with "data" word in the HTML.
 
 NOTE 2:	In HTML the data attributes are written using dashes.
