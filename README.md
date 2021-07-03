@@ -2421,3 +2421,15 @@ NOTE 4:	The data attributes are always stored in the dataset object.
 
 NOTE 5:	Data attributes are used to store data in the UI (in the HTML).
 ```
+
+#### Common methods to work with classes
+```
+const logo = document.querySelector('.nav__logo');
+
+logo.classList.add('fake-class');
+logo.classList.remove('fake-class');
+logo.classList.toggle('fake-class');
+logo.classList.contains('fake-class');
+
+NOTE: This are the common and recommended ways to work with classes.
+```
