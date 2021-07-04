@@ -2433,3 +2433,11 @@ logo.classList.contains('fake-class');
 
 NOTE: This are the common and recommended ways to work with classes.
 ```
+
+#### Set a class to an element
+```
+const logo = document.querySelector('.nav__logo');
+logo.className = 'fake-class';
+
+NOTE: Don't use because it overrides all existing classed and only allows one class on one element.
+```
