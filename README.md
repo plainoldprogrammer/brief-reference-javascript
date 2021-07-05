@@ -2441,3 +2441,26 @@ logo.className = 'fake-class';
 
 NOTE: Don't use because it overrides all existing classed and only allows one class on one element.
 ```
+
+#### Scroll to a specific section
+```
+const section1 = document.querySelector('#section--1');
+const s1coords = section1.getBoundingClientRect();
+
+// Option 1:
+Scrolling
+window.scrollTo(
+  s1coords.left + window.pageXOffset,
+  s1coords.top + window.pageYOffset
+);
+
+// Option 2:
+window.scrollTo({
+  left: s1coords.left + window.pageXOffset,
+  top: s1coords.top + window.pageYOffset,
+  behavior: 'smooth',
+});
+
+// Option 3 (The modern way):
+section1.scrollIntoView({ behavior: 'smooth' });
+```
