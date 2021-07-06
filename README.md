@@ -2464,3 +2464,25 @@ window.scrollTo({
 // Option 3 (The modern way):
 section1.scrollIntoView({ behavior: 'smooth' });
 ```
+
+#### Add an event to an element
+```
+// The old way:
+const h1 = document.querySelector('h1');
+h1.onmouseenter = function (e) {
+  console.log('onmouseenter: Great! You are reading the heading :D');
+};
+
+// The new way:
+const h1 = document.querySelector('h1');
+const alertH1 = function (e) {
+  console.log('addEventListener: Great! You are reading the heading :D');
+};
+h1.addEventListener('mouseenter', alertH1);
+
+NOTE 1:	Using the event directly (old way) on an element can only add one event handler. If tries to add another, the preivious one is replaced.
+
+NOTE 2:	Using the "addEventListener" method allows to assign multiple events handlers.
+
+NOTE 3:	Using the "addEventListener" method allows to remove an event handler (it should be named, for that reason we create the  function and assign to the variable "alertH1" in order to be specifyed when removed).
+```
