@@ -2486,3 +2486,12 @@ NOTE 2:	Using the "addEventListener" method allows to assign multiple events han
 
 NOTE 3:	Using the "addEventListener" method allows to remove an event handler (it should be named, for that reason we create the  function and assign to the variable "alertH1" in order to be specifyed when removed).
 ```
+
+#### Remove an event after 3 seconds
+```
+const h1 = document.querySelector('h1');
+const alertH1 = function (e) {
+  console.log('addEventListener: Great! You are reading the heading :D');
+};
+setTimeout(() => h1.removeEventListener('mouseenter', alertH1), 3000);
+```
