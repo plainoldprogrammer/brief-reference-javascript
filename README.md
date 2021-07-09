@@ -2495,3 +2495,11 @@ const alertH1 = function (e) {
 };
 setTimeout(() => h1.removeEventListener('mouseenter', alertH1), 3000);
 ```
+
+#### Stop the event propagation
+```
+document.querySelector('.some_element').addEventListener('click', function(e) {
+  console.log('Clicked on the element');
+  e.stopPropagation();
+});
+```
