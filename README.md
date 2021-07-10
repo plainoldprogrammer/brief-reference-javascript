@@ -2503,3 +2503,15 @@ document.querySelector('.some_element').addEventListener('click', function(e) {
   e.stopPropagation();
 });
 ```
+
+#### Capture an event in the capturing phase
+```
+document.querySelector('.some_element').addEventListener('click', function(e) {
+  console.log('Clicked on the element');
+}, true);
+
+
+NOTE 1: The third parameter must be true;
+
+NOTE 2: The event handler not longer listen for events in the bubbling phase, instead on the capturing phase.
+```
