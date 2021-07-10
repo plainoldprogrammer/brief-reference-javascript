@@ -2515,3 +2515,13 @@ NOTE 1: The third parameter must be true;
 
 NOTE 2: The event handler not longer listen for events in the bubbling phase, instead on the capturing phase.
 ```
+
+#### Find the closest element that contains a specific class
+```
+const tabsContainer = document.querySelector('.operations__tab-container');
+
+tabsContainer.addEventListener('click', function(e) {
+  const clicked = e.target.closest('.operations__tab');
+  console.log(clicked);
+});
+```
