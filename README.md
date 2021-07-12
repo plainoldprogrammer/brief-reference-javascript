@@ -2525,3 +2525,12 @@ tabsContainer.addEventListener('click', function(e) {
   console.log(clicked);
 });
 ```
+
+#### Specifying how to handle the scroll
+```
+window.addEventListener('scroll', function() {
+	console.log(window.scrollY);
+});
+
+NOTE: The scroll info is in the "window" object and not in the "event".
+```
