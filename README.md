@@ -2534,3 +2534,10 @@ window.addEventListener('scroll', function() {
 
 NOTE: The scroll info is in the "window" object and not in the "event".
 ```
+
+#### Remove the last element of an array in place
+```
+const names = ['John', 'Jane', 'Doe'];
+names.splice(0, 1);
+console.log(names);
+```
