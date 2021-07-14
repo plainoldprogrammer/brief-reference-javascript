@@ -2541,3 +2541,10 @@ const names = ['John', 'Jane', 'Doe'];
 names.splice(0, 1);
 console.log(names);
 ```
+
+#### Remove the first element of an array
+```
+const fruits = ['Apple', 'Orange', 'Mango'];
+fruits.shift();
+console.log(fruits);
+```
