@@ -2548,3 +2548,8 @@ const fruits = ['Apple', 'Orange', 'Mango'];
 fruits.shift();
 console.log(fruits);
 ```
+
+#### Get the length of an array
+```
+let arrayLength = ['keyboard', 'mouse', 'screen'];
+```
