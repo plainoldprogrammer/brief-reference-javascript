@@ -2551,5 +2551,10 @@ console.log(fruits);
 
 #### Get the length of an array
 ```
-let arrayLength = ['keyboard', 'mouse', 'screen'];
+let arrayLength = ['keyboard', 'mouse', 'screen'].length;
+```
+
+#### Declare an empty array
+```
+let emptyArray = [];
 ```
