@@ -2558,3 +2558,9 @@ let arrayLength = ['keyboard', 'mouse', 'screen'].length;
 ```
 let emptyArray = [];
 ```
+
+#### Declare an empty object
+```
+let emptyObject = {};
+```
+
