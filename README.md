@@ -2564,3 +2564,8 @@ let emptyArray = [];
 let emptyObject = {};
 ```
 
+#### Copy the content of an array
+```
+let original = [1, 2, 3];
+let copy = [...original];
+```
