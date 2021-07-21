@@ -2574,3 +2574,10 @@ let copy = [...original];
 ```
 isOpen && readFile();
 ```
+
+#### Measure time excecution of code
+```
+console.time("timer-1");
+// ... some code
+console.timeEnd("timer-1");
+```
