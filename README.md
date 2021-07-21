@@ -2569,3 +2569,8 @@ let emptyObject = {};
 let original = [1, 2, 3];
 let copy = [...original];
 ```
+
+#### Short circuit conditional
+```
+isOpen && readFile();
+```
