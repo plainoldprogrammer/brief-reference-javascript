@@ -2581,3 +2581,10 @@ console.time("timer-1");
 // ... some code
 console.timeEnd("timer-1");
 ```
+
+#### Swap values with array destructuring
+```
+let a = 1;
+let b = 2;
+[a, b] = [b, a];
+```
