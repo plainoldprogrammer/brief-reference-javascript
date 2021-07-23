@@ -2588,3 +2588,12 @@ let a = 1;
 let b = 2;
 [a, b] = [b, a];
 ```
+
+#### Resize an array
+```
+let array = [1995, 1996, 1997, 1998];  
+console.log(array.length);
+
+array.length = 3;
+console.log(array.length);
+``
