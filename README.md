@@ -8,6 +8,11 @@ Brief reference of the JavaScript programming language.
 console.log("This is a log message");
 ```
 
+#### Print a log error message on the console
+```
+console.error('error message');
+```
+
 #### Get an element by their id
 ```
 var el = document.getElementById("the-element-id");
