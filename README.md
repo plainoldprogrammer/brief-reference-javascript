@@ -8,6 +8,11 @@ Brief reference of the JavaScript programming language.
 console.log("This is a log message");
 ```
 
+#### Print a warning message on the console
+```
+console.warn('warning message');
+```
+
 #### Print a log error message on the console
 ```
 console.error('error message');
