@@ -7,6 +7,10 @@ Brief reference of the JavaScript programming language.
 ```
 console.log("This is a log message");
 ```
+#### Print a info message on the console
+```
+console.info("This is an info message");
+```
 
 #### Print a warning message on the console
 ```
