@@ -2611,4 +2611,11 @@ console.log(array.length);
 
 array.length = 3;
 console.log(array.length);
-``
+```
+
+#### Log the name of the variables
+```
+let x = 1;
+let y = 2;
+console.log({x, y});
+```
