@@ -2619,3 +2619,9 @@ let x = 1;
 let y = 2;
 console.log({x, y});
 ```
+
+#### Get the width and height of the window
+```
+let width = window.outerWidth;
+let height = window.outerHeight;
+```
