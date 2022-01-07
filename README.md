@@ -2625,3 +2625,9 @@ console.log({x, y});
 let width = window.outerWidth;
 let height = window.outerHeight;
 ```
+
+#### Return an object created from a single function paramenter
+```
+const generatePerson = (name) => ({name});
+console.log(generatePerson('John Doe'));
+```
