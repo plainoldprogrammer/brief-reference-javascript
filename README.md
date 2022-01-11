@@ -2631,3 +2631,14 @@ let height = window.outerHeight;
 const generatePerson = (name) => ({name});
 console.log(generatePerson('John Doe'));
 ```
+
+#### Format JSON output with spaces
+```
+let car = {
+  model: 'BMW',
+  year: 1985,
+};
+
+let formattedCar = JSON.stringify(car, null, 2);
+console.log(formattedCar);
+```
