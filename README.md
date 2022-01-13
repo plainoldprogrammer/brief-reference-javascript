@@ -2642,3 +2642,8 @@ let car = {
 let formattedCar = JSON.stringify(car, null, 2);
 console.log(formattedCar);
 ```
+
+#### Print the stack trace
+```
+console.trace();
+```
