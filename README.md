@@ -2647,3 +2647,14 @@ console.log(formattedCar);
 ```
 console.trace();
 ```
+
+#### Duplicate an object
+```
+// Using {}
+let duplicatedObject = {..originalObject};
+
+// Using slice
+let duplicatedObject = originalObject.splice();
+
+NOTE:	On both cases the new object is a different reference.
+```
