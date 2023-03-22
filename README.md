@@ -2658,3 +2658,8 @@ let duplicatedObject = originalObject.splice();
 
 NOTE:	On both cases the new object is a different reference.
 ```
+
+#### Import a named module
+```
+import { something } from './some-module.js';
+```
