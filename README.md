@@ -2663,3 +2663,14 @@ NOTE:	On both cases the new object is a different reference.
 ```
 import { something } from './some-module.js';
 ```
+
+#### Clone an object
+```
+let somePerson = {
+    firstName: 'John',
+    lastName: 'Doe'
+};
+
+let otherPerson = structuredClone(somePerson);
+otherPerson.firstName ='Johny';
+```
