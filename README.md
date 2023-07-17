@@ -4,32 +4,32 @@ Brief reference of the JavaScript programming language.
 ---
 
 #### Print a log on the console
-```
+```js
 console.log("This is a log message");
 ```
 
 #### Print a info message on the console
-```
+```js
 console.info("This is an info message");
 ```
 
 #### Print a warning message on the console
-```
+```js
 console.warn('warning message');
 ```
 
 #### Print a log error message on the console
-```
+```js
 console.error('error message');
 ```
 
 #### Get an element by their id
-```
+```js
 var el = document.getElementById("the-element-id");
 ```
 
 #### Add an event listener to an element
-```
+```js
 var p = document.getElementById("element-id");
 
 p.addEventListener("click", function(event)
@@ -39,19 +39,19 @@ p.addEventListener("click", function(event)
 ```
 
 #### Set an attribute
-```
+```js
 ul.setAttribute("class", "notes");
 ```
 
 #### Get elements by tag name
-```
+```js
 list = document.getElementsByTagName("ul")[0];
 
 NOTE:	Retrieve the first list in the DOM.
 ```
 
 #### Create a new li element and add some text content to it
-```
+```js
 list = document.getElementsByTagName("ul")[0];
 newElement = document.createElement("li");
 newElement.textContent = "Page manimulation from JS is easy";
@@ -62,17 +62,17 @@ NOTE:	The element is appended too the first list in the DOM.
 ```
 
 #### Define a constant
-```
+```js
 const PI = 3.141593;
 ```
 
 #### Get the length of an array
-```
+```js
 const elements = [1, -1, -3].length
 ```
 
 #### Loop an array
-```
+```js
 const places = ["Italy", "France", "Portugal"]
 
 console.log("\nUsing an array function: ")
@@ -87,37 +87,37 @@ places.forEach(function (place) {
 ```
 
 #### Basic arrow function
-```
+```js
 value => {
   console.log(value)
 }
 ```
 
 #### Define a constant array
-```
+```js
 const t = [1, -1, 3];
 ```
 
 #### Use the map method
-```
+```js
 const t = [1, 2, 3]
 const m1 = t.map(value => value *2)
 ```
 
 #### Transform an array of integers to an array of html li
-```
+```js
 const t = [1, 2, 3]
 const m2 = t.map(value => "<li>" + value + </li>)
 ```
 
 #### Assign individual items of an array to a variable
-```
+```js
 const t = [1, 2, 3, 4, 5]
 const [first, second, ...rest] = t
 ```
 
 #### Define an object using object literals
-```
+```js
 const person = {
   name: "Somebody",
   age: 18,
@@ -126,27 +126,27 @@ const person = {
 ```
 
 #### Reference a property of an object using dot notation
-```
+```js
 console.log(object1.name);
 ```
 
 #### Reference a property of an object using field notation
-```
+```js
 console.log(object1[fieldName])
 ```
 
 #### Add properties to an object on the fly using dot notation
-```
+```js
 object1.address = "Helsinki"
 ```
 
 #### Add properties to an object on the fly using brackets notation
-```
+```js
 object1["secret number"] = 1234
 ```
 
 #### Define an arrow function in a normal way or with a shortcut
-```
+```js
 const sum = (p1, p2) => {
   return (p1 + p2)
 }
@@ -159,12 +159,12 @@ const sumShorthand = (p1, p2) => (
 ```
 
 #### Arrow function with a single parameter
-```
+```js
 const area = width => width * width;
 ```
 
 #### Assign a method to an object by defining a property that is a function
-```
+```js
 const arto = {
   name: "John Doe",
   age: 18,
@@ -176,7 +176,7 @@ const arto = {
 ```
 
 #### Assign a method to an object after the creation of such object
-```
+```js
 const arto = {
   name: "Arto",
   age: 35,
@@ -197,7 +197,7 @@ arto.sayBye()
 ```
 
 #### Storing a method reference in a variable
-```
+```js
 const arto = {
   name: "Arto Hellas",
   age: 35,
@@ -218,7 +218,7 @@ someAddition(1, 5)
 ```
 
 #### Define a class and two objects
-```
+```js
 class Person {
   constructor(name, age) {
     this.name = name
@@ -238,7 +238,7 @@ janja.greet()
 ```
 
 #### Destructure an object
-```
+```js
 props = {
   name: "Arto Hellas",
   age: 35,
@@ -248,7 +248,7 @@ const { name, age } = props;
 ```
 
 #### Make repeated calls to refresh function every second
-```
+```js
 setInterval(() => {
   refresh()
   counter += 1
@@ -258,43 +258,43 @@ setInterval(() => {
 
 #### The correct way of using console log for debugging variables
 Instead of:
-```
+```js
 console.log('props value is ' + props)
 ```
 Use:
-```
+```js
 console.log('props value is', props)
 ```
 
 #### Arrow function written in compact form
 Full form arrow function:
-```
+```js
 (note) => {
   return note.id
 }
 ```
 Compact form arrow function:
-```
+```js
 note => note.id
 ```
 
 #### Use template string syntax
 Old:
-```
+```js
 console.log('importance of ' + id + ' needs to be toggled')
 ```
 New:
-```
+```js
 console.log(`importance of ${id} needs to be toggled`)
 ```
 
 #### Convert to an integer
-```
+```js
 parseInt(id);
 ```
 
 #### Create and modify an array with map
-```
+```js
 const persons = [
   {
     name: "Tony",
@@ -319,7 +319,7 @@ console.log(updatedPersons);
 ```
 
 #### Create an instance of a user defined object type
-```
+```js
 function Car(make, model, year)
 {
   this.make = make;
@@ -332,7 +332,7 @@ console.log(car1.make)
 ```
 
 #### Create an array with the lenght of each element of another array
-```
+```js
 const names = [
   "The bear is white",
   "The lion is the king",
@@ -344,7 +344,7 @@ console.log(charactersCount)
 ```
 
 #### Define a class and instantiate an object
-```
+```js
 class Person {
   constructor(name) {
     this.name = name;
@@ -360,13 +360,13 @@ waitress.sayHello();
 ```
 
 #### Remove 2 elements from an array
-```
+```js
 const position = id;
 this.servers.splice(position, 2);
 ```
 
 #### A simple promise
-```
+```js
 let promiseExample = new Promise((resolve, reject) => {
   setTimeout(function() {
     resolve('Success!');
@@ -382,7 +382,7 @@ promiseExample.then((successMessage) => {
 
 
 #### Create an object with properties
-```
+```js
 let person = {
   firstName: 'John',
   lastName: 'Doe'
@@ -390,7 +390,7 @@ let person = {
 ```
 
 #### Access object properties using array notation
-```
+```js
 let person = {
   firstName: 'John',
   lastName: 'Doe'
@@ -401,7 +401,7 @@ console.log(person['lastName']);
 ```
 
 #### Access to a property that contains spaces in their name
-```
+```js
 let person = {
   'full name': 'John Doe'
 };
@@ -412,7 +412,7 @@ NOTE: Is not possible to use the dot notation to access to properties that conta
 ```
 
 #### Iterate over properties of an object using for...in loop
-```
+```js
 let person = {
   name: 'John',
   age: 32,
@@ -426,7 +426,7 @@ for (let key in person) {
 ```
 
 #### Add a method to an existing object
-```
+```js
 let person = {
   name: 'John',
   city: 'New York'
@@ -440,7 +440,7 @@ person.greet();
 ```
 
 #### Define a function and add it to an object
-```
+```js
 let person = {
   name: 'John',
   city: 'New York'
@@ -455,7 +455,7 @@ person.greet();
 ```
 
 #### Define methods using the object literal syntax
-```
+```js
 let person = {
   name: 'John',
   city: 'New York',
@@ -468,7 +468,7 @@ console.log(person.greet());
 ```
 
 #### Shorthand to define a method in an object
-```
+```js
 let person = {
   name: 'John',
   city: 'New York',
@@ -481,7 +481,7 @@ console.log(person.greet());
 ```
 
 #### Shorten array
-```
+```js
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 console.log(numbers);
 
@@ -490,7 +490,7 @@ console.log(numbers);
 ```
 
 #### Short circuit conditionals
-```
+```js
 let age = 23;
 
 age < 21 && console.log('Cant drink alcohol');
@@ -498,7 +498,7 @@ age >= 21 && console.log('Can drink alcohol');
 ```
 
 #### Log an array into a table
-```
+```js
 function Person(firstName, lastName, age) {
   this.firstName = firstName;
   this.lastName = lastName;
@@ -513,7 +513,7 @@ console.table([firstChildren, secondChildren, thirdChildren]);
 ```
 
 #### Log an object into a table
-```
+```js
 function Person(firstName, lastName, age) {
   this.firstName = firstName;
   this.lastName = lastName;
@@ -528,7 +528,7 @@ console.table({firstChildren, secondChildren, thirdChildren});
 ```
 
 #### Log an object into a table with specific columns
-```
+```js
 function Person(firstName, lastName, age) {
   this.firstName = firstName;
   this.lastName = lastName;
@@ -543,7 +543,7 @@ console.table({firstChildren, secondChildren, thirdChildren});
 ```
 
 #### Remove duplicated elements from an array
-```
+```js
 const names = ['Juan', 18, 'Juan', 'Alberto', 'Juan', 'Eduardo', 18];
 
 console.log(names);
@@ -551,25 +551,25 @@ console.log([... new Set(names)]);
 ```
 
 #### Convert a string to a number
-```
+```js
 const error = "404";
 console.log(+error);
 ```
 
 #### Convert a number to a string
-```
+```js
 const error = 404;
 console.log(error + '');
 ```
 
 #### Remove all falsy values from an array
-```
+```js
 const allData = [1, undefined, NaN, 2, null, '@working', true, 3, false];
 console.log(allData.filter(Boolean));
 ```
 
 #### Load data from a file
-```
+```js
 function loadJSON(callback) {
   var xobj = new XMLHttpRequest();
   xobj.overrideMimeType("data.json");
@@ -596,14 +596,14 @@ NOTE: The file data.json must exists.
 ```
 
 #### Check if a variable exists
-```
+```js
 if (typeof variable !== 'undefined') {
   // the variable is defined
 }
 ```
 
 #### Pass arguments into an IIFE
-```
+```js
 var someText = "Hello World!";
 
 (function(message) {
@@ -612,7 +612,7 @@ var someText = "Hello World!";
 ```
 
 #### Default parameters
-```
+```js
 function printFullName(firstName = 'John', lastName = 'Doe') {
   console.log(`${firstName} ${lastName}`);
 }
@@ -623,18 +623,18 @@ printFullName('Elon', 'Musk');
 ```
 
 #### Import a JavaScript file as a module
-```
+```js
 <script src="js/js.js" type="module"></script>
 ```
 
 #### Log the type of a value
-```
+```js
 let javaScriptIsFun = true;
 console.log(typeof javaScriptIsFun);
 ```
 
 #### Difference between undefined and null
-```
+```js
 let phone = undefined;
 console.log(phone);
 console.log(typeof phone);
@@ -645,7 +645,7 @@ console.log(typeof year);
 ```
 
 #### Check that a variable is not null
-```
+```js
 let phone;
 
 if (phone === undefined) {
@@ -656,12 +656,12 @@ if (phone === undefined) {
 ```
 
 #### Show a bug in the typeof operator when using null
-```
+```js
 console.log(typeof null);
 ```
 
 #### Reverse a string
-```
+```js
 const myName = 'John Doe';
 let reversedName = '';
 
@@ -673,7 +673,7 @@ console.log(reversedName);
 ```
 
 #### Create a property on the global object
-```
+```js
 hobby = "programming";
 console.log(hobby);
 
@@ -681,62 +681,62 @@ NOTE: This is a very bad practice.
 ```
 
 #### Log the global object
-```
+```js
 console.log(window);
 ```
 
 #### Log multiple values
-```
+```js
 const ageJohn = 2037 - 1991;
 const ageSammy = 2037 - 2018;
 console.log(ageJohn, ageSammy);
 ```
 
 #### Use the exponentiation operator
-```
+```js
 console.log(2 ** 4);
 ```
 
 #### Create a multiline
-```
+```js
 console.log('This is a simple multi line \n\
 That is created with JavaScript \n\
 and can be checked on the console.');
 ```
 
 #### Create a multiline using template literal syntax
-```
+```js
 console.log(`This is a simple multiline
 that is created using the template
 literal syntax with javascript`);
 ```
 
 #### Check the value of NaN
-```
+```js
 console.log(typeof NaN);
 
 NOTE: NaN actually means "invalid number".
 ```
 
 #### Difference between parseInt and Number
-```
+```js
 console.log(parseInt("123qwerty"));	// Returns 123.
 
 console.log(Number("123qwerty"));	// Return NaN.
 ```
 
 #### Convert a number to a string
-```
+```js
 console.log(String(23));
 ```
 
 #### Convert a string to a number
-```
+```js
 console.log(Number("23"));
 ```
 
 #### Type coercion
-```
+```js
 console.log('23' - '10' + 3);
 
 NOTE:	Using the + it converts to string.
@@ -745,17 +745,17 @@ NOTE:	Using the + it converts to string.
 ```
 
 #### Declare an empty object
-```
+```js
 {}
 ```
 
 #### Evaluate a falsy value
-```
+```js
 console.log(Boolean(0));
 ```
 
 #### Strict equal operator vs loose equal operator
-```
+```js
 const age = '18';
 
 if (age === 18) console.log('You just became an adult (strict)');
@@ -764,12 +764,12 @@ if (age == 18) console.log('You just become an adult (loose)')
 ```
 
 #### Use strict mode
-```
+```js
 "use strict"
 ```
 
 #### Switch statement
-```
+```js
 const day = 'wednesday';
 
 switch (day) {
@@ -793,24 +793,24 @@ switch (day) {
 ```
 
 #### Conditional operator as an expression
-```
+```js
 const age = 18;
 const drink = age >= 18 ? 'wine' : 'water';
 console.log(drink);
 ```
 
 #### Conditional operator inside a template literal
-```
+```js
 console.log(`I like to drink ${age >= 18 ? 'beer' : 'water'}`);
 ```
 
 #### Log the console object
-```
+```js
 console.log(console);
 ```
 
 #### Function declaration
-```
+```js
 function calculateAge(birthYear) {
   return 2037 - birthYear;
 }
@@ -819,7 +819,7 @@ console.log(calculateAge(1950));
 ```
 
 #### Function expression
-```
+```js
 const calculateAge = function(birthYear) {
   return 2037 - birthYear;
 }
@@ -828,13 +828,13 @@ console.log(calculateAge(1950));
 ```
 
 #### Arrow function
-```
+```js
 const calculateAge = birthYear => 2037 - birthYear;
 console.log(calculateAge(1950));
 ```
 
 #### Arrow function with body
-```
+```js
 const yearsUntilRetirement = birthYear => {
   const age = 2037 - birthYear;
   const retirement = 65 - age;
@@ -846,7 +846,7 @@ console.log(yearsUntilRetirement(1989));
 ```
 
 #### Arrow function with multiple parameters
-```
+```js
 const yearsUntilRetirement = (birthYear, firstName) => {
   const age = 2037 - birthYear;
   const retirement = 65 - age;
@@ -858,23 +858,23 @@ console.log(yearsUntilRetirement(1989, 'John'));
 ```
 
 #### Create an array using literal syntax
-```
+```js
 const friends = ['James', 'Willy', 'Davis'];
 ```
 
 #### Create an array using the Array function
-```
+```js
 const years = new Array(1991, 1984, 2008, 2020);
 ```
 
 #### Get the last element of an array
-```
+```js
 const friends = ['Jane', 'John', 'Kim'];
 console.log(friends[friends.length - 1]);
 ```
 
 #### Add an element to the end of an array
-```
+```js
 const friends = ['Jane', 'John', 'Kim'];
 friends.push('Jay');
 
@@ -882,7 +882,7 @@ NOTE:	push() returns the new size of the array.
 ```
 
 #### Add an element to beginning of an array
-```
+```js
 const friends = ['Jane', 'John', 'Kim'];
 friends.unshift('Jay');
 
@@ -890,7 +890,7 @@ NOTE:	unshift() returns the new size of the array.
 ```
 
 #### Remove the last element of an array
-```
+```js
 const friends = ['Jane', 'John', 'Kim'];
 friends.pop();
 
@@ -898,7 +898,7 @@ NOTE:	pop() returns the removed element.
 ```
 
 #### Remove the first element of an array
-```
+```js
 const friends = ['Jane', 'John', 'Kim'];
 const removed = friends.shift();
 
@@ -906,7 +906,7 @@ NOTE:	shift() returns the removed element.
 ```
 
 #### Get the index of an element
-```
+```js
 const friends = ['Jane', 'John', 'Kim'];
 console.log(friends.indexOf('Ptener'));
 
@@ -914,7 +914,7 @@ NOTE:	If the element doesnt exists indexOf() returns -1.
 ```
 
 #### Determine if an element exist in an array
-```
+```js
 const friends = ['Jane', 'John', 'Kim'];
 console.log(friends.includes('Kim'));
 
@@ -924,7 +924,7 @@ NOTE 2:	This methods uses strict equality.
 ```
 
 #### Log two arrays to the same Line
-```
+```js
 const calculateTip = function(bill) {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 }
@@ -935,7 +935,7 @@ console.log(bills, tips);
 ```
 
 #### Create an object using object literal syntax
-```
+```js
 const softwareDeveloper = {
   firstName: 'John',
   lastName: 'Doe',
@@ -946,7 +946,7 @@ const softwareDeveloper = {
 ```
 
 #### Use an expression in the bracket notation
-```
+```js
 const person = {
   firstName: 'John',
   lastName: 'Doe',
@@ -962,7 +962,7 @@ console.log(person['last' + nameKey]);
 ```
 
 #### Add a function to an object
-```
+```js
 const person = {
   firstName: 'John',
   lastName: 'Doe',
@@ -981,13 +981,13 @@ console.log(person['calcAge'](1995));
 ```
 
 #### Generate a random number between 1 and 6
-```
+```js
 let dice = Math.trunc(Math.random() * 6) + 1;
 console.log(dice);
 ```
 
 #### Merge two arrays
-```
+```js
 const array1 = ['a', 'b', 'c'];
 const array2 = ['d', 'e', 'f'];
 const array3 = array1.concat(array2);
@@ -996,64 +996,64 @@ console.log(array3);
 ```
 
 #### Set a breakpoint directly on the code
-```
+```js
 debugger;
 ```
 
 #### Get an element from the dom by their class
-```
+```js
 document.querySelector('.message');
 ```
 
 #### Change the text content of an element from the dom
-```
+```js
 document.querySelector('.message').textContent = 'Correct Number';
 ```
 
 #### Change the background color of the body from the dom
-```
+```js
 document.querySelector('body').style.backgroundColor = 'green';
 ```
 
 #### Change the width of an element through their class name
-```
+```js
 document.querySelector('.number').style.width = '30rem';
 ```
 
 #### Select multiple elements with the same class
-```
+```js
 const btnsOpenModal = document.querySelectorAll('.show-modal');
 ```
 
 #### Remove a class from an element
-```
+```js
 message.classList.remove('hidden');
 
 NOTE:	The class name should be specified without the period.
 ```
 
 #### Add a class to an element
-```
+```js
 message.classList.add('hidden');
 
 NOTE:	The class name should be specified without the period.
 ```
 
 #### Add an event handler each time a key is pressed
-```
+```js
 document.addEventListener('keydown', function (e) {
   console.log(e.key);
 });
 ```
 
 #### Check if an element contains a specific class
-```
+```js
 const modal = document.querySelector('.message');
 modal.classList.contains('hidden');
 ```
 
 #### Select an element by id
-```
+```js
 const score0El = document.querySelector('#score--0');
 
 const score1El = document.getElementById('score--1');
@@ -1062,19 +1062,19 @@ NOTE:	getElementById is suppose to be a little faster.
 ```
 
 #### Change dynamically the src of an image
-```
+```js
 const diceEl = document.querySelector('.dice');
 diceEl.src = `dice-${dice}.png`;
 ```
 
 #### Add a class to an element if it doesnt have of remove it if it has
-```
+```js
 const player0El = document.querySelector('.player--0');
 player0El.classList.toggle('player--active');
 ```
 
 #### Skip two elements at the time of destructuring
-```
+```js
 'use strict';
 
 const cities = ['Dallas', 'Vancouver', 'Chicago', 'Seattle'];
@@ -1088,7 +1088,7 @@ NOTE:	Add a comma for each element that you want to skip.
 ```
 
 #### Destructure an array into a variable and put the remainder on their own array
-```
+```js
 const cities = ['Dallas', 'Vancouver', 'Chicago', 'Seattle'];
 const [principalCity, ...rest] = cities;
 console.log(`principalCity = ${principalCity}\nother cities = ${rest}`);
@@ -1097,7 +1097,7 @@ NOTE:	Doesn't necessarily need call the array rest.
 ```
 
 #### Provide a default value for destructuring an array with undefined values
-```
+```js
 const companies = ['apple', 'amazon', undefined, 'microsft', 'tesla'];
 const [
   bestLaptops = 'unknown',
@@ -1113,7 +1113,7 @@ console.log(
 ```
 
 #### Rename a property at the time of destructuring
-```
+```js
 const consoles = {
   favorite: 'Snes',
   powerful: 'PS4',
@@ -1133,7 +1133,7 @@ console.log(
 ```
 
 #### Destructure only one property from an object
-```
+```js
 const consoles = {
   favorite: 'Snes',
   powerful: 'PS4',
@@ -1145,7 +1145,7 @@ console.log(powerful);
 ```
 
 #### Destructure and rename only one property from an object
-```
+```js
 const consoles = {
   favorite: 'Snes',
   powerful: 'PS2',
@@ -1157,7 +1157,7 @@ console.log(mostSelled);
 ```
 
 #### Copy one object to another object and have 2 different objects
-```
+```js
 const jessica2 = {
   firstName: 'Jessica',
   lastName: 'Williams',
@@ -1175,7 +1175,7 @@ NOTE:	This technique works only on the first level.
 ```
 
 #### Switch variables with destructuring
-```
+```js
 let [main, , secondary] = restaurant.categories;
 [main, secondary] = [secondary, main];
 
@@ -1183,7 +1183,7 @@ console.log(main, secondary);
 ```
 
 #### Destructure nested arrays
-```
+```js
 const nested = [2, 4, [5, 6]];
 
 const [i, , [j, k]] = nested;
@@ -1191,7 +1191,7 @@ console.log(i, j, j);
 ```
 
 #### Destructure assigment
-```
+```js
 let a = 111;
 let b = 999;
 const obj = { a: 23, b: 7, c: 14 };
@@ -1204,18 +1204,18 @@ NOTE:	When destrucuring a and b, must be wrapping inside parenthesis
 ```
 
 #### Create an array with the values from another array using the spread operator
-```
+```js
 const arr = [7, 8, 9];
 const newArr = [1, 2, ...arr];
 ```
 
 #### Get the individual values from an array
-```
+```js
 console.log(...someArray);
 ```
 
 #### Merge 2 arays using the spread operator
-```
+```js
 const programmingLanguages = ['JavaScript', 'TypeScript'];
 const frameworks = ['Angular', 'React', 'Vue'];
 
@@ -1224,7 +1224,7 @@ console.log(technologies);
 ```
 
 #### Create an array from a string using the spread operator
-```
+```js
 const str = 'Jonas';
 const letters = [...str, ' ', 'S.'];
 console.log(letters);
@@ -1233,7 +1233,7 @@ NOTE:	arrays, string, maps, sets are iterable. Objects are not.
 ```
 
 #### Read 3 times from the prompt and create an array
-```
+```js
 const ingredients = [
   prompt("Let's make pasta! Ingredient 1?s"),
   prompt("Let's make pasta! Ingredient 2?s"),
@@ -1242,13 +1242,13 @@ const ingredients = [
 ```
 
 #### Collect the unused values in the destructuring assigment using rest pattern
-```
+```js
 const [a, b, ...others] = [1, 2, 3, 4, 5];
 console.log(a, b, others);
 ```
 
 #### Use rest arguments
-```
+```js
 const add = function (...numbers) {
   let sum = 0;
 
@@ -1265,7 +1265,7 @@ add(8, 2, 5, 3, 2, 1, 4);
 ```
 
 #### Use the spread operator and rest paraments at the same time
-```
+```js
 const add = function (...numbers) {
   let sum = 0;
 
@@ -1281,7 +1281,7 @@ add(...x);
 ```
 
 #### Use the AND operator to call a function
-```
+```js
 if (restaurant.orderPizza) {
   restaurant.orderPizza('mushrooms', 'spinach');
 }
@@ -1292,7 +1292,7 @@ restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach');
 ````
 
 #### Use the nullish coalescing operator
-```
+```js
 restaurant.numGuests = 0;
 const guests = restaurant.numGuests || 10;
 console.log(guests);
@@ -1305,14 +1305,14 @@ console.log(guestCorrect);
 ```
 
 #### Use the for of loop
-```
+```js
 const cities = ['Los Angeles', 'Kansas City', 'Dallas'];
 
 for (const city of cities) console.log(city);
 ```
 
 #### Get the index and the value of each element in a for of loop
-```
+```js
 for (let item of menu.entries()) {
   console.log(`${item[0] + 1}: ${item[1]}`);
 }
@@ -1325,7 +1325,7 @@ for (const [i, el] of menu.entries()) {
 ```
 
 #### Use the optional chaining operator and the nullish coalescing operator with an array
-```
+```js
 const users = [{ name: 'Jonas', email: 'hello@jonas.io' }];
 
 console.log(users[0]?.name ?? 'User array empty');
@@ -1333,14 +1333,14 @@ console.log(users[1]?.name ?? 'User array empty');
 ```
 
 #### Iterate throught the keys of an object
-```
+```js
 for (const day of Object.keys(openingHours)) {
   console.log(day);
 }
 ```
 
 #### Create a set
-```
+```js
 const ordersSet = new Set([
   'Soda',
   'Soda',
@@ -1353,7 +1353,7 @@ console.log(ordersSet);
 ```
 
 #### Get the number of elements from a set
-```
+```js
 const ordersSet = new Set([
   'Soda',
   'Soda',
@@ -1366,7 +1366,7 @@ console.log(ordersSet.size);
 ```
 
 #### Determine if a set contains a specific element
-```
+```js
 const ordersSet = new Set([
   'Soda',
   'Soda',
@@ -1380,7 +1380,7 @@ console.log(ordersSet.has('Hotdog'));
 ```
 
 #### Add an element to a set
-```
+```js
 const ordersSet = new Set([
   'Soda',
   'Soda',
@@ -1395,7 +1395,7 @@ console.log(ordersSet);
 ```
 
 #### Delete an element from a set
-```
+```js
 const ordersSet = new Set([
   'Soda',
   'Soda',
@@ -1409,7 +1409,7 @@ console.log(ordersSet);
 ```
 
 #### Delete all the values from a set
-```
+```js
 const ordersSet = new Set([
   'Soda',
   'Soda',
@@ -1424,7 +1424,7 @@ console.log(ordersSet);
 ```
 
 #### Loop through a set
-```
+```js
 const ordersSet = new Set([
   'Soda',
   'Soda',
@@ -1437,40 +1437,40 @@ for (const order of ordersSet) console.log(order);
 ```
 
 #### Create a set from an array
-```
+```js
 const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'];
 const staffUnique = new Set(staff);
 console.log(staffUnique);
 ```
 
 #### Create an array with unique elements from another array
-```
+```js
 const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'];
 const staffUnique = [...new Set(staff)];
 console.log(staffUnique);
 ```
 
 #### Determine how many unique elements an array has
-```
+```js
 console.log(
   new Set(['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter']).size
 );
 ```
 
 #### Determine how many unique letters are in a string
-```
+```js
 console.log(new Set('jonasschmedtmann').size);
 ```
 
 #### Create a map
-```
+```js
 const rest = new Map();
 rest.set('name', 'Classico Italiano');
 console.log(rest);
 ```
 
 #### Access to an individual element of a string
-```
+```js
 const plane = 'A320';
 
 console.log(plane[0]);
@@ -1479,25 +1479,25 @@ console.log(plane[2])
 ```
 
 #### Get the length of a string
-```
+```js
 const language = 'This is JavaScript';
 console.log(language.length);
 ```
 
 #### Get the position of an element in a string
-```
+```js
 const language = 'The JavaScript Language';
 console.log(language.indexOf('r'));
 ```
 
 #### Get the last position of an element in a string
-```
+```js
 const language = 'The JavaScript Language';
 console.log(language.lastIndexOf('r'));
 ```
 
 #### Get the position of a word in a string
-```
+```js
 const language = 'The JavaScript Language';
 console.log(language.indexOf('JavaScript'));
 
@@ -1505,7 +1505,7 @@ NOTE:	indexOf is case sensitive.
 ```
 
 #### Get a substring from a string
-```
+```js
 const language = 'The JavaScript Language';
 console.log(language.slice(4, 14));
 
@@ -1517,7 +1517,7 @@ NOTE 2:	The length of the substring is equal to the second parameter - first par
 ```
 
 #### Get the first and the last word in a string
-```
+```js
 const language = 'The JavaScript Language';
 
 console.log(language.slice(0, language.indexOf(' ')));
@@ -1525,12 +1525,13 @@ console.log(language.slice(language.lastIndexOf(' ') + 1, language.length));
 ```
 
 #### Get a substring from a string and start counting from the end
-```
+```js
 const language = 'The JavaScript Language';
 console.log(language.slice(-2));
 ```
+
 #### Difference between a normal function and an arrow function
-```
+```js
 const obj = {
   normalFunction: function () {
     console.log("normal function", this);
@@ -1546,7 +1547,7 @@ obj.arrowFunction(); // Depends of the enviroments in which the function was def
 ```
 
 #### Multiline string using template literal syntax
-```
+```js
 let firstName = 'Pele';
 let country = 'Brazil';
 let sum = (a, b) => a + b;
@@ -1558,44 +1559,44 @@ Good luck!`;
 ```
 
 #### Replace the first occurrence in a string
-```
+```js
 const announcement = "This is the first pc in the pc world";
 console.log(announcement.replace("pc", "computer"));
 ```
 
 #### Replace all the occurrences in a string
-```
+```js
 const announcement = "This is the first pc in the pc world";
 console.log(announcement.replaceAll("pc", "computer"));
 ```
 
 #### Check if a string includes a subtring
-```
+```js
 const plane = "Visual Studio Code";
 console.log(plane.includes("Code"));
 ```
 
 #### Destructure an array (from a string)
-```
+```js
 const [firstName, lastName] = "John Doe".split(" ");
 ```
 
 #### Join an array
-```
+```js
 const [firstName, lastName] = "John Doe".split(" ");
 const newName = ["Mr.", firstName, lastName.toUpperCase()].join(" ");
 console.log(newName);
 ```
 
 #### Fill a string with a specific character
-```
+```js
 const sayHello = "Hello";
 console.log(sayHello.padEnd(7, "-"));
 console.log(sayHello.padStart(7, "-"));
 ```
 
 #### Mask a number like a credit card
-```
+```js
 const maskCreditCard = function (number) {
   const str = number + "";
   const last = str.slice(-4);
@@ -1604,13 +1605,13 @@ const maskCreditCard = function (number) {
 ```
 
 #### Repeat a message 5 times
-```
+```js
 const message = "Your computer will restart right now\n";
 console.log(message.repeat(5));
 ```
 
 #### Enhanced object literal
-```
+```js
 const createPerson = function (firstName, lastName) {
   const person = {
     firstName, // instead of firstName: firstName
@@ -1622,7 +1623,7 @@ const createPerson = function (firstName, lastName) {
 ```
 
 #### Immediately invoked function expression
-```
+```js
 // IIFE using function declaration
 (function () {
   console.log('This will never run again');
@@ -1633,7 +1634,7 @@ const createPerson = function (firstName, lastName) {
 ```
 
 #### Closure
-```
+```js
 const secureBooking = function () {
   let passengerCount = 0;
 
@@ -1652,7 +1653,7 @@ booker();
 ```
 
 #### Create a shallow copy of an array
-```
+```js
 let arr = ['a', 'b', 'c', 'd', 'e'];
 
 // Method 1:
@@ -1664,7 +1665,7 @@ console.log([...arr]);
 ```
 
 #### Reverse an array
-```
+```js
 const arr = ['j', 'i', 'h', 'g', 'f'];
 console.log(arr.reverse());
 
@@ -1672,7 +1673,7 @@ NOTE:	reverse method mutates the original array.
 ```
 
 #### Concatenate two arrays
-```
+```js
 arr = ['a', 'b', 'c', 'd', 'e'];
 const arr2 = ['f', 'g', 'h', 'i', 'i'];
 
@@ -1686,21 +1687,21 @@ NOTE:	Both methods doesn't mutate the original arrays.
 ```
 
 #### Retrieve a json file using the fetch api
-```
+```js
 fetch("DatasetMeta.json")
   .then((response) => response.json())
   .then((json) => console.log(json));
 ```
 
 #### Access to an array using the for of loop
-```
+```js
 const years = [1980, 1990, 2000, 2010, 2020];
 
 for (const year of years) console.log(`Year ${year}`);
 ```
 
 #### Access to an array using the for of loop and the forEach method
-```
+```js
 const years = [1980, 1990, 2000, 2010, 2020];
 
 years.forEach(function(year, index, array) {
@@ -1709,7 +1710,7 @@ years.forEach(function(year, index, array) {
 ```
 
 #### Access to a map using the forEach method
-```
+```js
 const companies = new Map([
   ['MSFT', 'Microsoft'],
   ['AAPL', 'Apple'],
@@ -1722,7 +1723,7 @@ companies.forEach(function(value, key, map) {
 ```
 
 #### Access to a set using the forEach method
-```
+```js
 const companies = new Set(['MSFT', 'AAPL', 'MSFT', 'AMZN', 'AMZN']);
 
 companies.forEach(function(value, key, map) {
@@ -1732,7 +1733,7 @@ companies.forEach(function(value, key, map) {
 ```
 
 #### Add an element to the inside of another element at the beginning
-```
+```js
 const html = `
   <div>
     A new element
@@ -1743,7 +1744,7 @@ containerMovements.insertAdjacentHTML('afterbegin', html);
 ```
 
 #### Map method to access to an array elements
-```
+```js
 const purchases = [10, 15, 20];
 const tax = .0825;
 
@@ -1760,7 +1761,7 @@ console.log(purchasesAfterTaxArrow);
 ```
 
 #### Filter method to get the positive and the negative values in an array
-```
+```js
 const purchases = [10, 15, 20, -300, 8, -16];
 
 // Using an annonymous function.
@@ -1777,7 +1778,7 @@ console.log(credit);
 ```
 
 #### Reduce method to sum all the values in an array
-```
+```js
 const purchases = [10, 15, 20, -300, 8, -16];
 
 // Reduce method using an annonymous function
@@ -1792,7 +1793,7 @@ console.log(balance);
 ```
 
 #### Reduce method to return the maximum number in an array
-```
+```js
 const purchases = [10, 15, 20, -300, 8, -16];
 
 const maximumValue = purchases.reduce(function (acc, val) {
@@ -1804,14 +1805,14 @@ NOTE: The initial value of the accumulator should be the first value in the arra
 ```
 
 #### Reduce method to calculate the average of an array of integers
-```
+```js
 const data = [100, 200, 300];
 const average = data.reduce((acc, age) => acc + age, 0) / data.length;
 console.log(average);
 ```
 
 #### Use map, filter and reduce methods together
-```
+```js
 const tax = 0.0825;
 const movements = [10, 15, 20, -300, 8, -16];
 
@@ -1824,7 +1825,7 @@ console.log(movementsAfterTax);
 ```
 
 #### Debug a chain call of map, filter and reduce
-```
+```js
 const tax = 0.0825;
 const movements = [10, 15, 20, -300, 8, -16];
 
@@ -1838,7 +1839,7 @@ const totalDepositsUSD = movements
   ```
   
 #### Find method to get the first occurence of an element
-```
+```js
 const movements = [10, 15, 20, -300, 8, -16];
 const firstWithdrawal = movements.find(mov => mov < 0);
 console.log(movements);
@@ -1846,7 +1847,7 @@ console.log(firstWithdrawal);
 ```
 
 #### Prevent a form from submitting a form
-```
+```js
 btnLogin.addEventListener('click', function (e) {
   e.preventDefault();
   console.log('LOGIN');
@@ -1856,14 +1857,14 @@ btnLogin.addEventListener('click', function (e) {
 ```
 
 #### Make an input to lose the focus
-```
+```js
 btnLogin.addEventListener('click', function (e) {
   inputLoginPin.blur();
 });
 ```
 
 #### Check for equality or for a condition
-```
+```js
 const movements = [10, 15, 20, -300, 8, -16];
 console.log(movements);
 
@@ -1872,7 +1873,7 @@ console.log(movements.includes(-300));
 ```
 
 #### Flattern an array
-```
+```js
 const arr = [[1, 2, 3], [4, 5, 6], 7, 8];
 console.log(arr);
 console.log(arr.flat());
@@ -1885,7 +1886,7 @@ console.log('');
 ```
 
 #### Sort an array of strings
-```
+```js
 const owners = ['John', 'Zoe', 'Ariel', 'Maury'];
 console.log(owners);
 console.log(owners.sort()); // This mutates the original array
@@ -1893,13 +1894,13 @@ console.log(owners);
 ```
 
 #### Create a new array with 7 empty elements
-```
+```js
 const x = new Array(7);
 console.log(x);
 ```
 
 #### Create an array with dynamic values
-```
+```js
 const z = Array.from({ length: 7 }, (_, i) => i + 1);
 console.log(z);
 
@@ -1908,7 +1909,7 @@ NOTE 2: The second parameter of "Array.from" is a call back function that return
 ```
 
 #### Type coersion of a string to a number
-```
+```js
 Instead of:	Number('3');
 Can be:		+'3';
 
@@ -1916,7 +1917,7 @@ NOTE: The + at the beginning does type coersion.
 ```
 
 #### Parse a string to a number
-```
+```js
 // Integer
 console.log(Number.parseInt('2.5rem'));
 
@@ -1927,7 +1928,7 @@ NOTE: The string must start with a number.
 ```
 
 #### Check if a value is not a number
-```
+```js
 console.log(Number.isNaN(20));
 console.log(Number.isNaN('20'));
 console.log(Number.isNaN(+'20X'));
@@ -1935,26 +1936,26 @@ console.log(Number.isNaN(23 / 0));
 ```
 
 #### Check if a value is not an integer
-```
+```js
 console.log(Number.isInteger(23));
 console.log(Number.isInteger(23.0));
 console.log(Number.isInteger(23 / 0));
 ```
 
 #### Get the maximum number
-```
+```js
 console.log(Math.max(5, 18, 23, 11, 2));
 console.log(Math.max(5, 18, '23', 11, 2));
 console.log(Math.max(5, 18, '23px', 11, 2));
 ```
 
 #### Get the minimum number
-```
+```js
 console.log(Math.min(5, 18, 23, 11, 2));
 ```
 
 #### Generate a random number between a min and max
-```
+```js
 const randomInt = (min, max) => Math.floor(Math.random() * (max - min) + 1) + min;
 console.log(randomInt(3, 8));
 
@@ -1963,7 +1964,7 @@ NOTE 2:	"floor" round any number down.
 ```
 
 #### Round a decimal number
-```
+```js
 console.log((2.76).toFixed(1));
 
 NOTE: "toFixed" returns a string.
@@ -1971,7 +1972,7 @@ NOTE: "toFixed" returns a string.
 
 
 #### Represent a very big number
-```
+```js
 // Incorrect:
 console.log(4838430248342043823408394849483209);
 
@@ -1986,7 +1987,7 @@ NOTE 2: The "BigInt" construction function works fine only with small integer nu
 ```
 
 #### Create a new date
-```
+```js
 // Using a constructor
 new Date();
 
@@ -2000,7 +2001,7 @@ new Date(2037, 10, 31);
 ```
 
 #### Getters and setters of a date
-```
+```js
 const future = new Date(2037, 10, 19, 15, 23);
 console.log(future);
 
@@ -2021,12 +2022,12 @@ console.log(future);
 ```
 
 #### Get the number of milliseconds since unix epoch
-```
+```js
 console.log(Date.now());
 ```
 
 #### Pass an array to a function that receives integers
-```
+```js
 const sum = (a, b) => a + b;
 const numbers = [2, 3];
 const total = sum(...numbers);
@@ -2035,7 +2036,7 @@ console.log(total);
 ```
 
 #### Create an array using values from another array
-```
+```js
 const numbers = [2, 3];
 const moreNumbers = [1, ...numbers, 4, 5];
 
@@ -2043,7 +2044,7 @@ console.log(moreNumbers);
 ```
 
 #### Create an array from two arrays
-```
+```js
 const numbers = [2, 3];
 const moreNumbers = [4, 5];
 const concatenate = [...numbers, ...moreNumbers];
@@ -2052,7 +2053,7 @@ console.log(concatenate);
 ```
 
 #### Put the first element of an array in a variable and the rest in another array
-```
+```js
 const numbers = [2, 3];
 const moreNumbers = [1, ...numbers, 4, 5];
 const [firstNumber, ...otherNumbers] = moreNumbers;
@@ -2063,7 +2064,7 @@ console.log("otherNumbers: " + otherNumbers);
 ```
 
 #### Clone an array using the spread operator
-```
+```js
 const nums = [1, 2, 3, 4, 5];
 const numsClon = [...nums];
 
@@ -2071,7 +2072,7 @@ console.log(numsClon);
 ```
 
 #### Clone an object and add a property to it using the spread operator
-```
+```js
 const person = {
   firstName: "John",
   lastName: "Doe",
@@ -2087,7 +2088,7 @@ console.log(person2);
 ```
 
 #### Clone an object using the spread operator and modify a property
-```
+```js
 const person = {
   firstName: "John",
   lastName: "Doe",
@@ -2100,7 +2101,7 @@ console.log(otherPerson);
 ```
 
 #### Destructure an object and put the rest on another object
-```
+```js
 const person = {
   firstName: "John",
   lastName: "Doe",
@@ -2115,7 +2116,7 @@ console.log('restPerson: ', restPerson);
 ```
 
 #### Define a class
-```
+```js
 class Rentangle {
   constructor(height, width) {
     this.height = height;
@@ -2129,7 +2130,7 @@ class Rentangle {
 ```
 
 #### Instantiate an object from a class
-```
+```js
 class Rentangle {
   constructor(height, width) {
     this.height = height;
@@ -2146,19 +2147,19 @@ rectangle.area();
 ```
 
 #### Print the timestamp of a date
-```
+```js
 const future = new Date(2037, 10, 19, 15, 23);
 console.log(+future);
 ```
 
 #### Create a date format based in the US
-```
+```js
 const now = new Date();
 labelDate.textContent = new Intl.DateTimeFormat('en-US').format(now);
 ```
 
 #### Create a date format based in the US with specific options
-```
+```js
 const now = new Date();
 const options = {
   hour: 'numeric',
@@ -2173,7 +2174,7 @@ labelDate.textContent = new Intl.DateTimeFormat('en-US', options).format(now);
 ```
 
 #### Create a date format based on your browser
-```
+```js
 const now = new Date();
 const options = {
   hour: 'numeric',
@@ -2190,13 +2191,13 @@ labelDate.textContent = new Intl.DateTimeFormat(locale, options).format(now);
 ```
 
 #### Create a formatter for US number
-```
+```js
 const num = 3884764.23;
 console.log('US: ', new Intl.NumberFormat('en-US').format(num));
 ```
 
 #### Create a formatter with a specific unit
-```
+```js
 const num = 3884764.23;
 
 const options = {
@@ -2214,7 +2215,7 @@ console.log(
 ```
 
 #### Create a formatter with a currency unit
-```
+```js
 const num = 3884764.23;
 
 const options = {
@@ -2234,7 +2235,7 @@ NOTE: The currency must be specified as option because is not determined by the 
 ```
 
 #### Print the date every second
-```
+```js
 setInterval(function () {
   const now = new Date();
   console.log(now);
@@ -2242,12 +2243,12 @@ setInterval(function () {
 ```
 
 #### Select the entire document
-```
+```js
 console.log(document.documentElement);
 ```
 
 #### Get and set inline styles
-```
+```js
 const message = document.createElement('div');
 message.style.width = '120%';
 message.style.backgroundColor = '#37383d';
@@ -2260,7 +2261,7 @@ console.log(message.style.backgroundColor);
 ```
 
 #### Get all the styles from an element
-```
+```js
 const message = document.createElement('div');
 message.style.width = '120%';
 message.style.backgroundColor = '#37383d';
@@ -2272,7 +2273,7 @@ NOTE:	This get the computed styles of the element.
 ```
 
 #### Get a specific property from computed styles in an element
-```
+```js
 const message = document.createElement('div');
 message.style.width = '120%';
 message.style.backgroundColor = '#37383d';
@@ -2281,7 +2282,7 @@ console.log(getComputedStyle(message).backgroundColor);
 ```
 
 #### Increase the height of a div by getting their computed style
-```
+```js
 const message = document.createElement('div');
 message.style.width = '120%';
 message.style.backgroundColor = '#37383d';
@@ -2291,7 +2292,7 @@ message.style.height =
 ```
 
 #### Change a custom property value
-```
+```js
 // In the CSS
 :root {
   --color-primary: #5ec576;
@@ -2303,7 +2304,7 @@ NOTE:	"setProperty" works with custom properties and also with properties.
 ```
 
 #### Get the class name from an element
-```
+```js
 // In the HTML file:
 <img
   src="img/logo.png"
@@ -2318,7 +2319,7 @@ console.log(logo.className);
 ```
 
 #### Change the value of an attribute
-```
+```js
 // In the HTML file:
 <img
   src="img/logo.png"
@@ -2333,7 +2334,7 @@ logo.alt = 'Beautiful minimalist logo';
 ```
 
 #### Get the value of a custom attribute
-```
+```js
 // In the HTML file:
 <img
   src="img/logo.png"
@@ -2357,7 +2358,7 @@ NOTE:	The custom attributes are ignored for html if they are ignored because the
 ```
 
 #### Set an attribute and their value
-```
+```js
 // In the HTML file:
 <img
   src="img/logo.png"
@@ -2373,7 +2374,7 @@ logo.setAttribute('company', 'Bankist');
 ```
 
 #### Get the absolute and the relative url of an image
-```
+```js
 // In the HTML file:
 <img
   src="img/logo.png"
@@ -2395,7 +2396,7 @@ console.log(logo.getAttribute('src'));
 ```
 
 #### Get the absolute and the relative url of a link
-```
+```js
 // In the HTML:
 <a class="nav__link nav__link--btn btn--show-modal" href="#"> Open account </a>
 
@@ -2411,7 +2412,7 @@ console.log(link.getAttribute('href'));
 ```
 
 #### Access to data attributes
-```
+```js
 // In the HTML:
 <img
    src="img/logo.png"
@@ -2438,7 +2439,7 @@ NOTE 5:	Data attributes are used to store data in the UI (in the HTML).
 ```
 
 #### Common methods to work with classes
-```
+```js
 const logo = document.querySelector('.nav__logo');
 
 logo.classList.add('fake-class');
@@ -2450,7 +2451,7 @@ NOTE: This are the common and recommended ways to work with classes.
 ```
 
 #### Set a class to an element
-```
+```js
 const logo = document.querySelector('.nav__logo');
 logo.className = 'fake-class';
 
@@ -2458,7 +2459,7 @@ NOTE: Don't use because it overrides all existing classed and only allows one cl
 ```
 
 #### Scroll to a specific section
-```
+```js
 const section1 = document.querySelector('#section--1');
 const s1coords = section1.getBoundingClientRect();
 
@@ -2481,7 +2482,7 @@ section1.scrollIntoView({ behavior: 'smooth' });
 ```
 
 #### Add an event to an element
-```
+```js
 // The old way:
 const h1 = document.querySelector('h1');
 h1.onmouseenter = function (e) {
@@ -2503,7 +2504,7 @@ NOTE 3:	Using the "addEventListener" method allows to remove an event handler (i
 ```
 
 #### Remove an event after 3 seconds
-```
+```js
 const h1 = document.querySelector('h1');
 const alertH1 = function (e) {
   console.log('addEventListener: Great! You are reading the heading :D');
@@ -2512,7 +2513,7 @@ setTimeout(() => h1.removeEventListener('mouseenter', alertH1), 3000);
 ```
 
 #### Stop the event propagation
-```
+```js
 document.querySelector('.some_element').addEventListener('click', function(e) {
   console.log('Clicked on the element');
   e.stopPropagation();
@@ -2520,7 +2521,7 @@ document.querySelector('.some_element').addEventListener('click', function(e) {
 ```
 
 #### Capture an event in the capturing phase
-```
+```js
 document.querySelector('.some_element').addEventListener('click', function(e) {
   console.log('Clicked on the element');
 }, true);
@@ -2532,7 +2533,7 @@ NOTE 2: The event handler not longer listen for events in the bubbling phase, in
 ```
 
 #### Find the closest element that contains a specific class
-```
+```js
 const tabsContainer = document.querySelector('.operations__tab-container');
 
 tabsContainer.addEventListener('click', function(e) {
@@ -2542,7 +2543,7 @@ tabsContainer.addEventListener('click', function(e) {
 ```
 
 #### Specifying how to handle the scroll
-```
+```js
 window.addEventListener('scroll', function() {
 	console.log(window.scrollY);
 });
@@ -2551,61 +2552,61 @@ NOTE: The scroll info is in the "window" object and not in the "event".
 ```
 
 #### Remove the last element of an array in place
-```
+```js
 const names = ['John', 'Jane', 'Doe'];
 names.splice(0, 1);
 console.log(names);
 ```
 
 #### Remove the first element of an array
-```
+```js
 const fruits = ['Apple', 'Orange', 'Mango'];
 fruits.shift();
 console.log(fruits);
 ```
 
 #### Get the length of an array
-```
+```js
 let arrayLength = ['keyboard', 'mouse', 'screen'].length;
 ```
 
 #### Declare an empty array
-```
+```js
 let emptyArray = [];
 ```
 
 #### Declare an empty object
-```
+```js
 let emptyObject = {};
 ```
 
 #### Copy the content of an array
-```
+```js
 let original = [1, 2, 3];
 let copy = [...original];
 ```
 
 #### Short circuit conditional
-```
+```js
 isOpen && readFile();
 ```
 
 #### Measure time excecution of code
-```
+```js
 console.time("timer-1");
 // ... some code
 console.timeEnd("timer-1");
 ```
 
 #### Swap values with array destructuring
-```
+```js
 let a = 1;
 let b = 2;
 [a, b] = [b, a];
 ```
 
 #### Resize an array
-```
+```js
 let array = [1995, 1996, 1997, 1998];  
 console.log(array.length);
 
@@ -2614,26 +2615,26 @@ console.log(array.length);
 ```
 
 #### Log the name of the variables
-```
+```js
 let x = 1;
 let y = 2;
 console.log({x, y});
 ```
 
 #### Get the width and height of the window
-```
+```js
 let width = window.outerWidth;
 let height = window.outerHeight;
 ```
 
 #### Return an object created from a single function paramenter
-```
+```js
 const generatePerson = (name) => ({name});
 console.log(generatePerson('John Doe'));
 ```
 
 #### Format JSON output with spaces
-```
+```js
 let car = {
   model: 'BMW',
   year: 1985,
@@ -2644,12 +2645,12 @@ console.log(formattedCar);
 ```
 
 #### Print the stack trace
-```
+```js
 console.trace();
 ```
 
 #### Duplicate an object
-```
+```js
 // Using {}
 let duplicatedObject = {..originalObject};
 
@@ -2660,12 +2661,12 @@ NOTE:	On both cases the new object is a different reference.
 ```
 
 #### Import a named module
-```
+```js
 import { something } from './some-module.js';
 ```
 
 #### Clone an object
-```
+```js
 let somePerson = {
     firstName: 'John',
     lastName: 'Doe'
