@@ -2675,3 +2675,8 @@ let somePerson = {
 let otherPerson = structuredClone(somePerson);
 otherPerson.firstName ='Johny';
 ```
+
+#### Log a message into the console with custom style
+```js
+console.log("%chello world", "background-color: blue; color: white");
+```
